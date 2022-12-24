@@ -1,0 +1,2717 @@
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupDynamicDtoVSProjection.findBy_UserDto4_dynamic
+
+# Run progress: 0,00% complete, ETA 00:17:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 185274,000 us/op
+# Warmup Iteration   2: 89998,100 us/op
+# Warmup Iteration   3: 83281,786 us/op
+# Warmup Iteration   4: 70263,225 us/op
+# Warmup Iteration   5: 74105,186 us/op
+
+# Warmup Iteration   1: 562456,300 us/op
+# Warmup Iteration   2: 322911,750 us/op
+# Warmup Iteration   3: 199794,400 us/op
+# Warmup Iteration   4: 323707,300 us/op
+# Warmup Iteration   5: 309222,350 us/op
+
+# Warmup Iteration   1: 152906,625 us/op
+# Warmup Iteration   2: 126294,375 us/op
+# Warmup Iteration   3: 136475,975 us/op
+# Warmup Iteration   4: 120585,240 us/op
+# Warmup Iteration   5: 109993,040 us/op
+
+# Warmup Iteration   1: 128939,475 us/op
+# Warmup Iteration   2: 119317,380 us/op
+# Warmup Iteration   3: 128016,400 us/op
+# Warmup Iteration   4: 111225,180 us/op
+# Warmup Iteration   5: 113041,980 us/op
+
+# Warmup Iteration   1: 119503,060 us/op
+# Warmup Iteration   2: 108433,700 us/op
+# Warmup Iteration   3: 104672,480 us/op
+# Warmup Iteration   4: 106229,340 us/op
+# Warmup Iteration   5: 118725,100 us/op
+
+# Warmup Iteration   1: 133592,225 us/op
+# Warmup Iteration   2: 121230,260 us/op
+# Warmup Iteration   3: 120808,520 us/op
+# Warmup Iteration   4: 118698,880 us/op
+# Warmup Iteration   5: 118057,860 us/op
+
+# Warmup Iteration   1: 671042,100 us/op
+# Warmup Iteration   2: 424110,350 us/op
+# Warmup Iteration   3: 331371,700 us/op
+# Warmup Iteration   4: 350111,600 us/op
+# Warmup Iteration   5: 374518,200 us/op
+
+# Warmup Iteration   1: 136889,375 us/op
+# Warmup Iteration   2: 133047,550 us/op
+# Warmup Iteration   3: 120148,680 us/op
+# Warmup Iteration   4: 125074,780 us/op
+# Warmup Iteration   5: 119316,900 us/op
+
+# Warmup Iteration   1: 120194,620 us/op
+# Warmup Iteration   2: 122830,700 us/op
+# Warmup Iteration   3: 150385,575 us/op
+# Warmup Iteration   4: 115961,180 us/op
+# Warmup Iteration   5: 149029,900 us/op
+
+# Warmup Iteration   1: 121950,420 us/op
+# Warmup Iteration   2: 128422,125 us/op
+# Warmup Iteration   3: 129340,325 us/op
+# Warmup Iteration   4: 117830,540 us/op
+# Warmup Iteration   5: 115587,780 us/op
+
+# Warmup Iteration   1: 124012,140 us/op
+# Warmup Iteration   2: 114555,500 us/op
+# Warmup Iteration   3: 121409,720 us/op
+# Warmup Iteration   4: 121109,620 us/op
+# Warmup Iteration   5: 115900,840 us/op
+
+# Warmup Iteration   1: 149426,500 us/op
+# Warmup Iteration   2: 122160,120 us/op
+# Warmup Iteration   3: 121920,400 us/op
+# Warmup Iteration   4: 122206,140 us/op
+# Warmup Iteration   5: 141798,100 us/op
+
+# Warmup Iteration   1: 328845,100 us/op
+# Warmup Iteration   2: 319209,300 us/op
+# Warmup Iteration   3: 349012,350 us/op
+# Warmup Iteration   4: 387705,950 us/op
+# Warmup Iteration   5: 320438,650 us/op
+
+# Warmup Iteration   1: 116689,940 us/op
+# Warmup Iteration   2: 126374,200 us/op
+# Warmup Iteration   3: 120977,960 us/op
+# Warmup Iteration   4: 132673,050 us/op
+# Warmup Iteration   5: 128053,450 us/op
+
+# Warmup Iteration   1: 345536,000 us/op
+# Warmup Iteration   2: 323029,850 us/op
+# Warmup Iteration   3: 313132,100 us/op
+# Warmup Iteration   4: 326849,200 us/op
+# Warmup Iteration   5: 326537,400 us/op
+
+# Warmup Iteration   1: 128505,200 us/op
+# Warmup Iteration   2: 118739,660 us/op
+# Warmup Iteration   3: 119294,560 us/op
+# Warmup Iteration   4: 123602,240 us/op
+# Warmup Iteration   5: 123599,900 us/op
+
+# Warmup Iteration   1: 119034,360 us/op
+# Warmup Iteration   2: 123259,300 us/op
+# Warmup Iteration   3: 120409,100 us/op
+# Warmup Iteration   4: 119030,780 us/op
+# Warmup Iteration   5: 126410,620 us/op
+
+# Warmup Iteration   1: 442179,300 us/op
+# Warmup Iteration   2: 438574,050 us/op
+# Warmup Iteration   3: 440405,300 us/op
+# Warmup Iteration   4: 424263,550 us/op
+# Warmup Iteration   5: 445074,700 us/op
+
+# Warmup Iteration   1: 59195,700 us/op
+# Warmup Iteration   2: 47690,418 us/op
+# Warmup Iteration   3: 70557,975 us/op
+# Warmup Iteration   4: 48848,845 us/op
+# Warmup Iteration   5: 48307,309 us/op
+Iteration   1: 47448,436 us/op
+Iteration   2: 47837,873 us/op
+Iteration   3: 47447,709 us/op
+Iteration   4: 74913,500 us/op
+Iteration   5: 48894,727 us/op
+Iteration   6: 47080,455 us/op
+Iteration   7: 46980,509 us/op
+Iteration   8: 47676,655 us/op
+Iteration   9: 47334,309 us/op
+Iteration  10: 47441,664 us/op
+Iteration  11: 47042,927 us/op
+Iteration  12: 48173,400 us/op
+Iteration  13: 47827,018 us/op
+Iteration  14: 47495,218 us/op
+Iteration  15: 47856,336 us/op
+Iteration  16: 51615,870 us/op
+Iteration  17: 47162,909 us/op
+Iteration  18: 47081,918 us/op
+Iteration  19: 47050,873 us/op
+Iteration  20: 50612,670 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupDynamicDtoVSProjection.findBy_UserDto4_dynamic":
+  49248,749 ±(99.9%) 5348,922 us/op [Average]
+  (min, avg, max) = (46980,509, 49248,749, 74913,500), stdev = 6159,827
+  CI (99.9%): [43899,827, 54597,671] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupDynamicDtoVSProjection.findBy_UserProjection2_dynamic
+
+# Run progress: 0,00% complete, ETA 00:15:35
+# Fork: 1 of 1
+# Warmup Iteration   1: 865338,900 us/op
+# Warmup Iteration   2: 427717,250 us/op
+# Warmup Iteration   3: 332331,750 us/op
+# Warmup Iteration   4: 339610,350 us/op
+# Warmup Iteration   5: 259617,950 us/op
+
+# Warmup Iteration   1: 153781,650 us/op
+# Warmup Iteration   2: 128161,200 us/op
+# Warmup Iteration   3: 140139,050 us/op
+# Warmup Iteration   4: 125429,880 us/op
+# Warmup Iteration   5: 147956,075 us/op
+
+# Warmup Iteration   1: 115966,440 us/op
+# Warmup Iteration   2: 115499,420 us/op
+# Warmup Iteration   3: 114596,500 us/op
+# Warmup Iteration   4: 130804,675 us/op
+# Warmup Iteration   5: 136195,550 us/op
+
+# Warmup Iteration   1: 131194,675 us/op
+# Warmup Iteration   2: 119617,640 us/op
+# Warmup Iteration   3: 107045,180 us/op
+# Warmup Iteration   4: 108742,140 us/op
+# Warmup Iteration   5: 119006,320 us/op
+
+# Warmup Iteration   1: 127042,540 us/op
+# Warmup Iteration   2: 127110,075 us/op
+# Warmup Iteration   3: 136321,350 us/op
+# Warmup Iteration   4: 199652,100 us/op
+# Warmup Iteration   5: 119247,300 us/op
+
+# Warmup Iteration   1: 759911,900 us/op
+# Warmup Iteration   2: 380175,000 us/op
+# Warmup Iteration   3: 381099,050 us/op
+# Warmup Iteration   4: 388129,800 us/op
+# Warmup Iteration   5: 343765,950 us/op
+
+# Warmup Iteration   1: 141563,925 us/op
+# Warmup Iteration   2: 122191,120 us/op
+# Warmup Iteration   3: 122649,500 us/op
+# Warmup Iteration   4: 122420,960 us/op
+# Warmup Iteration   5: 153779,275 us/op
+
+# Warmup Iteration   1: 129405,125 us/op
+# Warmup Iteration   2: 115131,960 us/op
+# Warmup Iteration   3: 115286,820 us/op
+# Warmup Iteration   4: 114315,440 us/op
+# Warmup Iteration   5: 115892,420 us/op
+
+# Warmup Iteration   1: 130589,800 us/op
+# Warmup Iteration   2: 119758,620 us/op
+# Warmup Iteration   3: 152156,150 us/op
+# Warmup Iteration   4: 134678,950 us/op
+# Warmup Iteration   5: 196617,033 us/op
+
+# Warmup Iteration   1: 124089,920 us/op
+# Warmup Iteration   2: 129924,300 us/op
+# Warmup Iteration   3: 114683,080 us/op
+# Warmup Iteration   4: 129938,425 us/op
+# Warmup Iteration   5: 122912,680 us/op
+
+# Warmup Iteration   1: 123794,000 us/op
+# Warmup Iteration   2: 118144,620 us/op
+# Warmup Iteration   3: 119970,520 us/op
+# Warmup Iteration   4: 122912,400 us/op
+# Warmup Iteration   5: 124871,200 us/op
+
+# Warmup Iteration   1: 314851,900 us/op
+# Warmup Iteration   2: 328295,850 us/op
+# Warmup Iteration   3: 347945,050 us/op
+# Warmup Iteration   4: 320281,050 us/op
+# Warmup Iteration   5: 399832,600 us/op
+
+# Warmup Iteration   1: 132695,125 us/op
+# Warmup Iteration   2: 118167,520 us/op
+# Warmup Iteration   3: 121224,440 us/op
+# Warmup Iteration   4: 119445,100 us/op
+# Warmup Iteration   5: 122148,700 us/op
+
+# Warmup Iteration   1: 415406,850 us/op
+# Warmup Iteration   2: 323138,950 us/op
+# Warmup Iteration   3: 335328,750 us/op
+# Warmup Iteration   4: 343265,450 us/op
+# Warmup Iteration   5: 344335,450 us/op
+
+# Warmup Iteration   1: 119603,720 us/op
+# Warmup Iteration   2: 135254,075 us/op
+# Warmup Iteration   3: 119913,060 us/op
+# Warmup Iteration   4: 119786,280 us/op
+# Warmup Iteration   5: 153259,975 us/op
+
+# Warmup Iteration   1: 121638,100 us/op
+# Warmup Iteration   2: 120956,140 us/op
+# Warmup Iteration   3: 120982,160 us/op
+# Warmup Iteration   4: 119411,520 us/op
+# Warmup Iteration   5: 121997,660 us/op
+
+# Warmup Iteration   1: 472012,750 us/op
+# Warmup Iteration   2: 418438,500 us/op
+# Warmup Iteration   3: 439964,100 us/op
+# Warmup Iteration   4: 516828,100 us/op
+# Warmup Iteration   5: 416350,050 us/op
+
+# Warmup Iteration   1: 184129,167 us/op
+# Warmup Iteration   2: 184424,400 us/op
+# Warmup Iteration   3: 139870,650 us/op
+# Warmup Iteration   4: 137876,225 us/op
+# Warmup Iteration   5: 138238,475 us/op
+Iteration   1: 139629,675 us/op
+Iteration   2: 139319,525 us/op
+Iteration   3: 137644,000 us/op
+Iteration   4: 138352,175 us/op
+Iteration   5: 138099,150 us/op
+Iteration   6: 138206,275 us/op
+Iteration   7: 138035,600 us/op
+Iteration   8: 138069,950 us/op
+Iteration   9: 138695,850 us/op
+Iteration  10: 139867,100 us/op
+Iteration  11: 139489,050 us/op
+Iteration  12: 139162,125 us/op
+Iteration  13: 138836,525 us/op
+Iteration  14: 137958,575 us/op
+Iteration  15: 137480,800 us/op
+Iteration  16: 139135,325 us/op
+Iteration  17: 139446,275 us/op
+Iteration  18: 137903,050 us/op
+Iteration  19: 138120,500 us/op
+Iteration  20: 137393,300 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupDynamicDtoVSProjection.findBy_UserProjection2_dynamic":
+  138542,241 ±(99.9%) 663,943 us/op [Average]
+  (min, avg, max) = (137393,300, 138542,241, 139867,100), stdev = 764,598
+  CI (99.9%): [137878,298, 139206,184] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnDynamic.findAllObjectArray2_UserDto2_objectToUserDto2
+
+# Run progress: 1,34% complete, ETA 03:49:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 828316,700 us/op
+# Warmup Iteration   2: 448267,550 us/op
+# Warmup Iteration   3: 309887,600 us/op
+# Warmup Iteration   4: 347641,650 us/op
+# Warmup Iteration   5: 298348,850 us/op
+
+# Warmup Iteration   1: 213635,833 us/op
+# Warmup Iteration   2: 191274,100 us/op
+# Warmup Iteration   3: 145026,050 us/op
+# Warmup Iteration   4: 150109,650 us/op
+# Warmup Iteration   5: 137950,450 us/op
+
+# Warmup Iteration   1: 123973,680 us/op
+# Warmup Iteration   2: 119104,080 us/op
+# Warmup Iteration   3: 127154,650 us/op
+# Warmup Iteration   4: 109386,180 us/op
+# Warmup Iteration   5: 110831,840 us/op
+
+# Warmup Iteration   1: 126653,925 us/op
+# Warmup Iteration   2: 112998,080 us/op
+# Warmup Iteration   3: 118209,880 us/op
+# Warmup Iteration   4: 109015,900 us/op
+# Warmup Iteration   5: 106659,960 us/op
+
+# Warmup Iteration   1: 125587,620 us/op
+# Warmup Iteration   2: 141569,100 us/op
+# Warmup Iteration   3: 117782,340 us/op
+# Warmup Iteration   4: 118289,200 us/op
+# Warmup Iteration   5: 118451,960 us/op
+
+# Warmup Iteration   1: 623140,700 us/op
+# Warmup Iteration   2: 352501,100 us/op
+# Warmup Iteration   3: 328333,800 us/op
+# Warmup Iteration   4: 317341,050 us/op
+# Warmup Iteration   5: 327359,700 us/op
+
+# Warmup Iteration   1: 141922,900 us/op
+# Warmup Iteration   2: 125322,240 us/op
+# Warmup Iteration   3: 123664,100 us/op
+# Warmup Iteration   4: 123088,040 us/op
+# Warmup Iteration   5: 124626,300 us/op
+
+# Warmup Iteration   1: 145227,800 us/op
+# Warmup Iteration   2: 119147,780 us/op
+# Warmup Iteration   3: 115699,500 us/op
+# Warmup Iteration   4: 115583,780 us/op
+# Warmup Iteration   5: 123661,500 us/op
+
+# Warmup Iteration   1: 114852,760 us/op
+# Warmup Iteration   2: 133876,950 us/op
+# Warmup Iteration   3: 152076,750 us/op
+# Warmup Iteration   4: 134903,000 us/op
+# Warmup Iteration   5: 142496,975 us/op
+
+# Warmup Iteration   1: 127658,525 us/op
+# Warmup Iteration   2: 129781,675 us/op
+# Warmup Iteration   3: 130939,650 us/op
+# Warmup Iteration   4: 134050,650 us/op
+# Warmup Iteration   5: 113193,700 us/op
+
+# Warmup Iteration   1: 131795,875 us/op
+# Warmup Iteration   2: 118214,060 us/op
+# Warmup Iteration   3: 119650,020 us/op
+# Warmup Iteration   4: 121541,460 us/op
+# Warmup Iteration   5: 119821,260 us/op
+
+# Warmup Iteration   1: 328749,250 us/op
+# Warmup Iteration   2: 327001,250 us/op
+# Warmup Iteration   3: 324740,550 us/op
+# Warmup Iteration   4: 315668,150 us/op
+# Warmup Iteration   5: 321138,050 us/op
+
+# Warmup Iteration   1: 138429,300 us/op
+# Warmup Iteration   2: 120562,080 us/op
+# Warmup Iteration   3: 132819,100 us/op
+# Warmup Iteration   4: 119136,760 us/op
+# Warmup Iteration   5: 118550,100 us/op
+
+# Warmup Iteration   1: 391199,750 us/op
+# Warmup Iteration   2: 317251,500 us/op
+# Warmup Iteration   3: 311341,550 us/op
+# Warmup Iteration   4: 320634,250 us/op
+# Warmup Iteration   5: 312556,350 us/op
+
+# Warmup Iteration   1: 141364,325 us/op
+# Warmup Iteration   2: 145953,125 us/op
+# Warmup Iteration   3: 120854,300 us/op
+# Warmup Iteration   4: 124579,300 us/op
+# Warmup Iteration   5: 123322,460 us/op
+
+# Warmup Iteration   1: 127280,825 us/op
+# Warmup Iteration   2: 133857,575 us/op
+# Warmup Iteration   3: 123443,360 us/op
+# Warmup Iteration   4: 118396,620 us/op
+# Warmup Iteration   5: 125210,920 us/op
+
+# Warmup Iteration   1: 441731,700 us/op
+# Warmup Iteration   2: 420594,300 us/op
+# Warmup Iteration   3: 424448,800 us/op
+# Warmup Iteration   4: 427450,650 us/op
+# Warmup Iteration   5: 421629,000 us/op
+
+# Warmup Iteration   1: 134118,725 us/op
+# Warmup Iteration   2: 113299,660 us/op
+# Warmup Iteration   3: 104356,580 us/op
+# Warmup Iteration   4: 104376,940 us/op
+# Warmup Iteration   5: 109810,300 us/op
+Iteration   1: 108240,600 us/op
+Iteration   2: 104237,680 us/op
+Iteration   3: 104853,060 us/op
+Iteration   4: 114150,040 us/op
+Iteration   5: 104085,480 us/op
+Iteration   6: 105680,840 us/op
+Iteration   7: 104465,020 us/op
+Iteration   8: 109072,360 us/op
+Iteration   9: 104597,400 us/op
+Iteration  10: 104584,740 us/op
+Iteration  11: 104653,600 us/op
+Iteration  12: 105024,180 us/op
+Iteration  13: 106161,220 us/op
+Iteration  14: 104466,360 us/op
+Iteration  15: 103783,280 us/op
+Iteration  16: 104290,820 us/op
+Iteration  17: 104229,320 us/op
+Iteration  18: 104562,900 us/op
+Iteration  19: 109672,040 us/op
+Iteration  20: 105541,080 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnDynamic.findAllObjectArray2_UserDto2_objectToUserDto2":
+  105817,601 ±(99.9%) 2241,545 us/op [Average]
+  (min, avg, max) = (103783,280, 105817,601, 114150,040), stdev = 2581,366
+  CI (99.9%): [103576,056, 108059,146] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnDynamic.findBy_UserDto2_Dynamic
+
+# Run progress: 2,67% complete, ETA 03:45:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 809569,800 us/op
+# Warmup Iteration   2: 421998,000 us/op
+# Warmup Iteration   3: 328719,300 us/op
+# Warmup Iteration   4: 344081,900 us/op
+# Warmup Iteration   5: 299343,500 us/op
+
+# Warmup Iteration   1: 270395,350 us/op
+# Warmup Iteration   2: 127577,220 us/op
+# Warmup Iteration   3: 162696,700 us/op
+# Warmup Iteration   4: 150716,875 us/op
+# Warmup Iteration   5: 146278,075 us/op
+
+# Warmup Iteration   1: 135747,450 us/op
+# Warmup Iteration   2: 143303,700 us/op
+# Warmup Iteration   3: 171391,067 us/op
+# Warmup Iteration   4: 132058,000 us/op
+# Warmup Iteration   5: 111932,940 us/op
+
+# Warmup Iteration   1: 109407,880 us/op
+# Warmup Iteration   2: 107126,040 us/op
+# Warmup Iteration   3: 121674,240 us/op
+# Warmup Iteration   4: 110187,940 us/op
+# Warmup Iteration   5: 108039,620 us/op
+
+# Warmup Iteration   1: 126594,025 us/op
+# Warmup Iteration   2: 140149,475 us/op
+# Warmup Iteration   3: 120138,980 us/op
+# Warmup Iteration   4: 131304,675 us/op
+# Warmup Iteration   5: 126855,040 us/op
+
+# Warmup Iteration   1: 622396,600 us/op
+# Warmup Iteration   2: 369094,900 us/op
+# Warmup Iteration   3: 353652,550 us/op
+# Warmup Iteration   4: 328513,900 us/op
+# Warmup Iteration   5: 325346,100 us/op
+
+# Warmup Iteration   1: 144124,550 us/op
+# Warmup Iteration   2: 123753,500 us/op
+# Warmup Iteration   3: 130973,750 us/op
+# Warmup Iteration   4: 122978,940 us/op
+# Warmup Iteration   5: 166811,250 us/op
+
+# Warmup Iteration   1: 177987,033 us/op
+# Warmup Iteration   2: 133793,475 us/op
+# Warmup Iteration   3: 119462,320 us/op
+# Warmup Iteration   4: 117930,700 us/op
+# Warmup Iteration   5: 142288,500 us/op
+
+# Warmup Iteration   1: 127400,075 us/op
+# Warmup Iteration   2: 131011,625 us/op
+# Warmup Iteration   3: 135316,250 us/op
+# Warmup Iteration   4: 124167,260 us/op
+# Warmup Iteration   5: 138095,625 us/op
+
+# Warmup Iteration   1: 114366,540 us/op
+# Warmup Iteration   2: 127584,275 us/op
+# Warmup Iteration   3: 114792,840 us/op
+# Warmup Iteration   4: 131618,150 us/op
+# Warmup Iteration   5: 116106,400 us/op
+
+# Warmup Iteration   1: 135061,775 us/op
+# Warmup Iteration   2: 119541,400 us/op
+# Warmup Iteration   3: 127824,025 us/op
+# Warmup Iteration   4: 127388,150 us/op
+# Warmup Iteration   5: 132970,925 us/op
+
+# Warmup Iteration   1: 345960,250 us/op
+# Warmup Iteration   2: 355350,150 us/op
+# Warmup Iteration   3: 322298,700 us/op
+# Warmup Iteration   4: 327939,750 us/op
+# Warmup Iteration   5: 392387,950 us/op
+
+# Warmup Iteration   1: 117940,360 us/op
+# Warmup Iteration   2: 156114,925 us/op
+# Warmup Iteration   3: 118679,960 us/op
+# Warmup Iteration   4: 124508,960 us/op
+# Warmup Iteration   5: 132896,350 us/op
+
+# Warmup Iteration   1: 422192,750 us/op
+# Warmup Iteration   2: 325260,950 us/op
+# Warmup Iteration   3: 349503,500 us/op
+# Warmup Iteration   4: 332321,750 us/op
+# Warmup Iteration   5: 337649,550 us/op
+
+# Warmup Iteration   1: 134675,775 us/op
+# Warmup Iteration   2: 121468,660 us/op
+# Warmup Iteration   3: 119830,540 us/op
+# Warmup Iteration   4: 121259,320 us/op
+# Warmup Iteration   5: 141599,825 us/op
+
+# Warmup Iteration   1: 131103,600 us/op
+# Warmup Iteration   2: 129252,350 us/op
+# Warmup Iteration   3: 122988,340 us/op
+# Warmup Iteration   4: 117220,980 us/op
+# Warmup Iteration   5: 140523,100 us/op
+
+# Warmup Iteration   1: 528567,000 us/op
+# Warmup Iteration   2: 454222,150 us/op
+# Warmup Iteration   3: 519974,700 us/op
+# Warmup Iteration   4: 465971,900 us/op
+# Warmup Iteration   5: 440219,600 us/op
+
+# Warmup Iteration   1: 107526,300 us/op
+# Warmup Iteration   2: 104512,380 us/op
+# Warmup Iteration   3: 103790,060 us/op
+# Warmup Iteration   4: 114398,100 us/op
+# Warmup Iteration   5: 105727,260 us/op
+Iteration   1: 104027,920 us/op
+Iteration   2: 104343,040 us/op
+Iteration   3: 103919,520 us/op
+Iteration   4: 103750,660 us/op
+Iteration   5: 103571,200 us/op
+Iteration   6: 104809,760 us/op
+Iteration   7: 104457,420 us/op
+Iteration   8: 103855,980 us/op
+Iteration   9: 103425,980 us/op
+Iteration  10: 104475,740 us/op
+Iteration  11: 104079,220 us/op
+Iteration  12: 108017,660 us/op
+Iteration  13: 104013,160 us/op
+Iteration  14: 103408,600 us/op
+Iteration  15: 103781,220 us/op
+Iteration  16: 109530,500 us/op
+Iteration  17: 104415,920 us/op
+Iteration  18: 104308,140 us/op
+Iteration  19: 106377,280 us/op
+Iteration  20: 109395,040 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnDynamic.findBy_UserDto2_Dynamic":
+  104898,198 ±(99.9%) 1640,774 us/op [Average]
+  (min, avg, max) = (103408,600, 104898,198, 109530,500), stdev = 1889,517
+  CI (99.9%): [103257,424, 106538,972] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnDynamic.findUserDto2_UserDto2_JPQL
+
+# Run progress: 4,01% complete, ETA 03:42:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 841204,100 us/op
+# Warmup Iteration   2: 419628,800 us/op
+# Warmup Iteration   3: 362584,800 us/op
+# Warmup Iteration   4: 386128,450 us/op
+# Warmup Iteration   5: 321226,700 us/op
+
+# Warmup Iteration   1: 186170,600 us/op
+# Warmup Iteration   2: 183798,133 us/op
+# Warmup Iteration   3: 130954,075 us/op
+# Warmup Iteration   4: 122322,960 us/op
+# Warmup Iteration   5: 114442,540 us/op
+
+# Warmup Iteration   1: 118364,520 us/op
+# Warmup Iteration   2: 148622,150 us/op
+# Warmup Iteration   3: 181891,533 us/op
+# Warmup Iteration   4: 112080,080 us/op
+# Warmup Iteration   5: 130779,150 us/op
+
+# Warmup Iteration   1: 107973,000 us/op
+# Warmup Iteration   2: 107360,500 us/op
+# Warmup Iteration   3: 120970,920 us/op
+# Warmup Iteration   4: 113171,820 us/op
+# Warmup Iteration   5: 261755,850 us/op
+
+# Warmup Iteration   1: 141614,075 us/op
+# Warmup Iteration   2: 125022,460 us/op
+# Warmup Iteration   3: 138633,600 us/op
+# Warmup Iteration   4: 123388,980 us/op
+# Warmup Iteration   5: 118646,780 us/op
+
+# Warmup Iteration   1: 719442,000 us/op
+# Warmup Iteration   2: 353844,950 us/op
+# Warmup Iteration   3: 340313,750 us/op
+# Warmup Iteration   4: 332886,750 us/op
+# Warmup Iteration   5: 368742,850 us/op
+
+# Warmup Iteration   1: 146299,525 us/op
+# Warmup Iteration   2: 121574,680 us/op
+# Warmup Iteration   3: 131559,375 us/op
+# Warmup Iteration   4: 138712,275 us/op
+# Warmup Iteration   5: 174296,833 us/op
+
+# Warmup Iteration   1: 143468,375 us/op
+# Warmup Iteration   2: 113961,160 us/op
+# Warmup Iteration   3: 115940,380 us/op
+# Warmup Iteration   4: 125702,825 us/op
+# Warmup Iteration   5: 120495,360 us/op
+
+# Warmup Iteration   1: 113877,900 us/op
+# Warmup Iteration   2: 121042,480 us/op
+# Warmup Iteration   3: 147806,600 us/op
+# Warmup Iteration   4: 116216,500 us/op
+# Warmup Iteration   5: 144987,850 us/op
+
+# Warmup Iteration   1: 119220,280 us/op
+# Warmup Iteration   2: 117043,700 us/op
+# Warmup Iteration   3: 120099,760 us/op
+# Warmup Iteration   4: 113673,260 us/op
+# Warmup Iteration   5: 113219,960 us/op
+
+# Warmup Iteration   1: 123191,560 us/op
+# Warmup Iteration   2: 120867,100 us/op
+# Warmup Iteration   3: 186011,367 us/op
+# Warmup Iteration   4: 130693,725 us/op
+# Warmup Iteration   5: 117783,320 us/op
+
+# Warmup Iteration   1: 344131,400 us/op
+# Warmup Iteration   2: 327465,850 us/op
+# Warmup Iteration   3: 328670,450 us/op
+# Warmup Iteration   4: 427830,850 us/op
+# Warmup Iteration   5: 350087,250 us/op
+
+# Warmup Iteration   1: 119786,340 us/op
+# Warmup Iteration   2: 117629,660 us/op
+# Warmup Iteration   3: 132131,750 us/op
+# Warmup Iteration   4: 135749,725 us/op
+# Warmup Iteration   5: 119785,660 us/op
+
+# Warmup Iteration   1: 388126,500 us/op
+# Warmup Iteration   2: 345400,550 us/op
+# Warmup Iteration   3: 320226,750 us/op
+# Warmup Iteration   4: 319976,200 us/op
+# Warmup Iteration   5: 370373,700 us/op
+
+# Warmup Iteration   1: 121934,240 us/op
+# Warmup Iteration   2: 117878,740 us/op
+# Warmup Iteration   3: 115905,060 us/op
+# Warmup Iteration   4: 117973,500 us/op
+# Warmup Iteration   5: 132695,550 us/op
+
+# Warmup Iteration   1: 119742,780 us/op
+# Warmup Iteration   2: 120680,380 us/op
+# Warmup Iteration   3: 115685,860 us/op
+# Warmup Iteration   4: 116183,020 us/op
+# Warmup Iteration   5: 119368,480 us/op
+
+# Warmup Iteration   1: 563127,000 us/op
+# Warmup Iteration   2: 439961,700 us/op
+# Warmup Iteration   3: 422962,850 us/op
+# Warmup Iteration   4: 421584,250 us/op
+# Warmup Iteration   5: 474051,650 us/op
+
+# Warmup Iteration   1: 107473,640 us/op
+# Warmup Iteration   2: 101966,280 us/op
+# Warmup Iteration   3: 102054,617 us/op
+# Warmup Iteration   4: 102311,800 us/op
+# Warmup Iteration   5: 101461,817 us/op
+Iteration   1: 101259,550 us/op
+Iteration   2: 102228,240 us/op
+Iteration   3: 101750,617 us/op
+Iteration   4: 101843,867 us/op
+Iteration   5: 102786,633 us/op
+Iteration   6: 102322,860 us/op
+Iteration   7: 103224,680 us/op
+Iteration   8: 102043,920 us/op
+Iteration   9: 101734,417 us/op
+Iteration  10: 102053,640 us/op
+Iteration  11: 101546,360 us/op
+Iteration  12: 102332,560 us/op
+Iteration  13: 101933,667 us/op
+Iteration  14: 101803,280 us/op
+Iteration  15: 101763,880 us/op
+Iteration  16: 102109,340 us/op
+Iteration  17: 101900,740 us/op
+Iteration  18: 101394,317 us/op
+Iteration  19: 102100,450 us/op
+Iteration  20: 101744,383 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnDynamic.findUserDto2_UserDto2_JPQL":
+  101993,870 ±(99.9%) 391,583 us/op [Average]
+  (min, avg, max) = (101259,550, 101993,870, 103224,680), stdev = 450,947
+  CI (99.9%): [101602,287, 102385,453] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllEM_UserDto1_EntityManagerResultTransformer
+
+# Run progress: 5,35% complete, ETA 03:39:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 926283,000 us/op
+# Warmup Iteration   2: 523952,600 us/op
+# Warmup Iteration   3: 466985,550 us/op
+# Warmup Iteration   4: 541069,600 us/op
+# Warmup Iteration   5: 306919,050 us/op
+
+# Warmup Iteration   1: 140877,250 us/op
+# Warmup Iteration   2: 130473,700 us/op
+# Warmup Iteration   3: 124141,020 us/op
+# Warmup Iteration   4: 117155,000 us/op
+# Warmup Iteration   5: 109571,460 us/op
+
+# Warmup Iteration   1: 131645,775 us/op
+# Warmup Iteration   2: 117941,960 us/op
+# Warmup Iteration   3: 137839,425 us/op
+# Warmup Iteration   4: 116780,980 us/op
+# Warmup Iteration   5: 122168,180 us/op
+
+# Warmup Iteration   1: 178837,067 us/op
+# Warmup Iteration   2: 131898,725 us/op
+# Warmup Iteration   3: 110343,620 us/op
+# Warmup Iteration   4: 107885,680 us/op
+# Warmup Iteration   5: 123250,240 us/op
+
+# Warmup Iteration   1: 136813,300 us/op
+# Warmup Iteration   2: 126394,940 us/op
+# Warmup Iteration   3: 116245,340 us/op
+# Warmup Iteration   4: 114528,440 us/op
+# Warmup Iteration   5: 119433,420 us/op
+
+# Warmup Iteration   1: 716072,900 us/op
+# Warmup Iteration   2: 386300,450 us/op
+# Warmup Iteration   3: 401678,200 us/op
+# Warmup Iteration   4: 332092,550 us/op
+# Warmup Iteration   5: 383081,700 us/op
+
+# Warmup Iteration   1: 145490,825 us/op
+# Warmup Iteration   2: 150534,275 us/op
+# Warmup Iteration   3: 130930,400 us/op
+# Warmup Iteration   4: 138184,925 us/op
+# Warmup Iteration   5: 140555,025 us/op
+
+# Warmup Iteration   1: 120339,500 us/op
+# Warmup Iteration   2: 139222,275 us/op
+# Warmup Iteration   3: 116457,200 us/op
+# Warmup Iteration   4: 113547,500 us/op
+# Warmup Iteration   5: 116892,240 us/op
+
+# Warmup Iteration   1: 114209,340 us/op
+# Warmup Iteration   2: 118167,640 us/op
+# Warmup Iteration   3: 145965,450 us/op
+# Warmup Iteration   4: 123379,340 us/op
+# Warmup Iteration   5: 168223,733 us/op
+
+# Warmup Iteration   1: 114927,900 us/op
+# Warmup Iteration   2: 122781,260 us/op
+# Warmup Iteration   3: 111159,860 us/op
+# Warmup Iteration   4: 126693,525 us/op
+# Warmup Iteration   5: 114338,040 us/op
+
+# Warmup Iteration   1: 124196,580 us/op
+# Warmup Iteration   2: 121176,860 us/op
+# Warmup Iteration   3: 125440,450 us/op
+# Warmup Iteration   4: 115554,840 us/op
+# Warmup Iteration   5: 115994,680 us/op
+
+# Warmup Iteration   1: 374821,900 us/op
+# Warmup Iteration   2: 332615,000 us/op
+# Warmup Iteration   3: 322526,800 us/op
+# Warmup Iteration   4: 319373,600 us/op
+# Warmup Iteration   5: 329749,250 us/op
+
+# Warmup Iteration   1: 140005,000 us/op
+# Warmup Iteration   2: 174016,050 us/op
+# Warmup Iteration   3: 149914,950 us/op
+# Warmup Iteration   4: 151626,175 us/op
+# Warmup Iteration   5: 130087,075 us/op
+
+# Warmup Iteration   1: 420311,750 us/op
+# Warmup Iteration   2: 387723,300 us/op
+# Warmup Iteration   3: 354684,050 us/op
+# Warmup Iteration   4: 322076,200 us/op
+# Warmup Iteration   5: 315540,350 us/op
+
+# Warmup Iteration   1: 131141,050 us/op
+# Warmup Iteration   2: 117603,880 us/op
+# Warmup Iteration   3: 118561,340 us/op
+# Warmup Iteration   4: 126468,050 us/op
+# Warmup Iteration   5: 120622,000 us/op
+
+# Warmup Iteration   1: 127575,050 us/op
+# Warmup Iteration   2: 126623,025 us/op
+# Warmup Iteration   3: 119362,420 us/op
+# Warmup Iteration   4: 118490,520 us/op
+# Warmup Iteration   5: 115606,860 us/op
+
+# Warmup Iteration   1: 599225,500 us/op
+# Warmup Iteration   2: 426390,950 us/op
+# Warmup Iteration   3: 415633,950 us/op
+# Warmup Iteration   4: 417969,900 us/op
+# Warmup Iteration   5: 443473,650 us/op
+
+# Warmup Iteration   1: 129480,750 us/op
+# Warmup Iteration   2: 110754,020 us/op
+# Warmup Iteration   3: 110791,680 us/op
+# Warmup Iteration   4: 110459,560 us/op
+# Warmup Iteration   5: 117543,260 us/op
+Iteration   1: 110205,140 us/op
+Iteration   2: 111423,580 us/op
+Iteration   3: 110330,300 us/op
+Iteration   4: 111454,240 us/op
+Iteration   5: 112092,140 us/op
+Iteration   6: 110016,700 us/op
+Iteration   7: 110515,440 us/op
+Iteration   8: 111034,900 us/op
+Iteration   9: 111971,640 us/op
+Iteration  10: 110713,580 us/op
+Iteration  11: 110141,780 us/op
+Iteration  12: 111237,720 us/op
+Iteration  13: 110696,320 us/op
+Iteration  14: 110465,460 us/op
+Iteration  15: 110897,500 us/op
+Iteration  16: 112249,900 us/op
+Iteration  17: 111480,300 us/op
+Iteration  18: 111143,620 us/op
+Iteration  19: 111008,260 us/op
+Iteration  20: 116493,640 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllEM_UserDto1_EntityManagerResultTransformer":
+  111278,608 ±(99.9%) 1203,734 us/op [Average]
+  (min, avg, max) = (110016,700, 111278,608, 116493,640), stdev = 1386,222
+  CI (99.9%): [110074,874, 112482,342] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllEntityToDto_UserDto1_JPA
+
+# Run progress: 6,68% complete, ETA 03:36:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 828243,100 us/op
+# Warmup Iteration   2: 575994,700 us/op
+# Warmup Iteration   3: 350160,950 us/op
+# Warmup Iteration   4: 326306,700 us/op
+# Warmup Iteration   5: 305723,400 us/op
+
+# Warmup Iteration   1: 176464,833 us/op
+# Warmup Iteration   2: 167190,875 us/op
+# Warmup Iteration   3: 171201,267 us/op
+# Warmup Iteration   4: 217734,733 us/op
+# Warmup Iteration   5: 169539,275 us/op
+
+# Warmup Iteration   1: 142320,675 us/op
+# Warmup Iteration   2: 160379,775 us/op
+# Warmup Iteration   3: 125451,420 us/op
+# Warmup Iteration   4: 117330,200 us/op
+# Warmup Iteration   5: 113995,440 us/op
+
+# Warmup Iteration   1: 106436,860 us/op
+# Warmup Iteration   2: 120023,920 us/op
+# Warmup Iteration   3: 110494,280 us/op
+# Warmup Iteration   4: 132298,950 us/op
+# Warmup Iteration   5: 109690,480 us/op
+
+# Warmup Iteration   1: 154165,025 us/op
+# Warmup Iteration   2: 121465,880 us/op
+# Warmup Iteration   3: 118796,040 us/op
+# Warmup Iteration   4: 132961,000 us/op
+# Warmup Iteration   5: 119497,340 us/op
+
+# Warmup Iteration   1: 695432,000 us/op
+# Warmup Iteration   2: 375870,800 us/op
+# Warmup Iteration   3: 384059,550 us/op
+# Warmup Iteration   4: 325287,300 us/op
+# Warmup Iteration   5: 349660,500 us/op
+
+# Warmup Iteration   1: 153825,525 us/op
+# Warmup Iteration   2: 120428,980 us/op
+# Warmup Iteration   3: 117578,940 us/op
+# Warmup Iteration   4: 124296,540 us/op
+# Warmup Iteration   5: 144580,725 us/op
+
+# Warmup Iteration   1: 185023,133 us/op
+# Warmup Iteration   2: 121555,360 us/op
+# Warmup Iteration   3: 122683,640 us/op
+# Warmup Iteration   4: 121107,480 us/op
+# Warmup Iteration   5: 135962,725 us/op
+
+# Warmup Iteration   1: 136671,850 us/op
+# Warmup Iteration   2: 136308,775 us/op
+# Warmup Iteration   3: 134258,625 us/op
+# Warmup Iteration   4: 116116,860 us/op
+# Warmup Iteration   5: 128191,440 us/op
+
+# Warmup Iteration   1: 135016,825 us/op
+# Warmup Iteration   2: 132752,900 us/op
+# Warmup Iteration   3: 117752,360 us/op
+# Warmup Iteration   4: 129883,575 us/op
+# Warmup Iteration   5: 118888,680 us/op
+
+# Warmup Iteration   1: 134974,900 us/op
+# Warmup Iteration   2: 121599,200 us/op
+# Warmup Iteration   3: 134595,925 us/op
+# Warmup Iteration   4: 120394,600 us/op
+# Warmup Iteration   5: 120132,780 us/op
+
+# Warmup Iteration   1: 320847,850 us/op
+# Warmup Iteration   2: 324736,850 us/op
+# Warmup Iteration   3: 324995,100 us/op
+# Warmup Iteration   4: 314530,250 us/op
+# Warmup Iteration   5: 351787,200 us/op
+
+# Warmup Iteration   1: 117533,880 us/op
+# Warmup Iteration   2: 119828,980 us/op
+# Warmup Iteration   3: 118448,220 us/op
+# Warmup Iteration   4: 142418,550 us/op
+# Warmup Iteration   5: 124009,360 us/op
+
+# Warmup Iteration   1: 467627,000 us/op
+# Warmup Iteration   2: 325768,950 us/op
+# Warmup Iteration   3: 372842,200 us/op
+# Warmup Iteration   4: 328289,850 us/op
+# Warmup Iteration   5: 317599,850 us/op
+
+# Warmup Iteration   1: 119959,440 us/op
+# Warmup Iteration   2: 130972,200 us/op
+# Warmup Iteration   3: 118282,120 us/op
+# Warmup Iteration   4: 117498,440 us/op
+# Warmup Iteration   5: 133546,300 us/op
+
+# Warmup Iteration   1: 119808,860 us/op
+# Warmup Iteration   2: 122013,220 us/op
+# Warmup Iteration   3: 116361,320 us/op
+# Warmup Iteration   4: 128857,625 us/op
+# Warmup Iteration   5: 117359,760 us/op
+
+# Warmup Iteration   1: 513996,700 us/op
+# Warmup Iteration   2: 465570,850 us/op
+# Warmup Iteration   3: 418470,350 us/op
+# Warmup Iteration   4: 422963,400 us/op
+# Warmup Iteration   5: 439402,400 us/op
+
+# Warmup Iteration   1: 360786,400 us/op
+# Warmup Iteration   2: 312767,250 us/op
+# Warmup Iteration   3: 327993,200 us/op
+# Warmup Iteration   4: 313663,950 us/op
+# Warmup Iteration   5: 318221,750 us/op
+Iteration   1: 312180,700 us/op
+Iteration   2: 317903,850 us/op
+Iteration   3: 310829,600 us/op
+Iteration   4: 314780,500 us/op
+Iteration   5: 310017,950 us/op
+Iteration   6: 314039,550 us/op
+Iteration   7: 312817,550 us/op
+Iteration   8: 310935,300 us/op
+Iteration   9: 314531,550 us/op
+Iteration  10: 312774,350 us/op
+Iteration  11: 316935,900 us/op
+Iteration  12: 312768,450 us/op
+Iteration  13: 321934,800 us/op
+Iteration  14: 311457,250 us/op
+Iteration  15: 315525,450 us/op
+Iteration  16: 316451,200 us/op
+Iteration  17: 343438,050 us/op
+Iteration  18: 312047,250 us/op
+Iteration  19: 311275,200 us/op
+Iteration  20: 312620,350 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllEntityToDto_UserDto1_JPA":
+  315263,240 ±(99.9%) 6278,788 us/op [Average]
+  (min, avg, max) = (310017,950, 315263,240, 343438,050), stdev = 7230,662
+  CI (99.9%): [308984,452, 321542,028] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllNativeQuery2_UserDto1_Dynamic
+
+# Run progress: 8,02% complete, ETA 03:34:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 849699,700 us/op
+# Warmup Iteration   2: 423659,500 us/op
+# Warmup Iteration   3: 369582,150 us/op
+# Warmup Iteration   4: 364740,000 us/op
+# Warmup Iteration   5: 304191,150 us/op
+
+# Warmup Iteration   1: 174969,900 us/op
+# Warmup Iteration   2: 137337,860 us/op
+# Warmup Iteration   3: 139547,725 us/op
+# Warmup Iteration   4: 122664,200 us/op
+# Warmup Iteration   5: 114675,520 us/op
+
+# Warmup Iteration   1: 128169,000 us/op
+# Warmup Iteration   2: 181433,967 us/op
+# Warmup Iteration   3: 150237,500 us/op
+# Warmup Iteration   4: 122440,820 us/op
+# Warmup Iteration   5: 132159,375 us/op
+
+# Warmup Iteration   1: 119768,540 us/op
+# Warmup Iteration   2: 115514,020 us/op
+# Warmup Iteration   3: 114809,080 us/op
+# Warmup Iteration   4: 118549,160 us/op
+# Warmup Iteration   5: 106095,960 us/op
+
+# Warmup Iteration   1: 144823,500 us/op
+# Warmup Iteration   2: 146775,725 us/op
+# Warmup Iteration   3: 119878,280 us/op
+# Warmup Iteration   4: 124630,260 us/op
+# Warmup Iteration   5: 128777,475 us/op
+
+# Warmup Iteration   1: 655730,400 us/op
+# Warmup Iteration   2: 368109,300 us/op
+# Warmup Iteration   3: 354760,300 us/op
+# Warmup Iteration   4: 323619,650 us/op
+# Warmup Iteration   5: 324867,700 us/op
+
+# Warmup Iteration   1: 144265,075 us/op
+# Warmup Iteration   2: 123229,960 us/op
+# Warmup Iteration   3: 123184,000 us/op
+# Warmup Iteration   4: 122446,440 us/op
+# Warmup Iteration   5: 150019,575 us/op
+
+# Warmup Iteration   1: 173766,633 us/op
+# Warmup Iteration   2: 124466,740 us/op
+# Warmup Iteration   3: 113946,580 us/op
+# Warmup Iteration   4: 113334,360 us/op
+# Warmup Iteration   5: 115506,720 us/op
+
+# Warmup Iteration   1: 114913,720 us/op
+# Warmup Iteration   2: 120492,540 us/op
+# Warmup Iteration   3: 148467,850 us/op
+# Warmup Iteration   4: 132441,625 us/op
+# Warmup Iteration   5: 145553,925 us/op
+
+# Warmup Iteration   1: 121643,380 us/op
+# Warmup Iteration   2: 117860,280 us/op
+# Warmup Iteration   3: 115146,440 us/op
+# Warmup Iteration   4: 121267,540 us/op
+# Warmup Iteration   5: 115876,640 us/op
+
+# Warmup Iteration   1: 130836,225 us/op
+# Warmup Iteration   2: 123777,580 us/op
+# Warmup Iteration   3: 125716,360 us/op
+# Warmup Iteration   4: 121107,300 us/op
+# Warmup Iteration   5: 131225,425 us/op
+
+# Warmup Iteration   1: 360351,550 us/op
+# Warmup Iteration   2: 360874,500 us/op
+# Warmup Iteration   3: 331845,650 us/op
+# Warmup Iteration   4: 326848,700 us/op
+# Warmup Iteration   5: 331186,950 us/op
+
+# Warmup Iteration   1: 132578,875 us/op
+# Warmup Iteration   2: 126418,250 us/op
+# Warmup Iteration   3: 132714,425 us/op
+# Warmup Iteration   4: 119969,140 us/op
+# Warmup Iteration   5: 130441,700 us/op
+
+# Warmup Iteration   1: 387528,450 us/op
+# Warmup Iteration   2: 371816,650 us/op
+# Warmup Iteration   3: 340649,250 us/op
+# Warmup Iteration   4: 318495,800 us/op
+# Warmup Iteration   5: 321582,100 us/op
+
+# Warmup Iteration   1: 125392,960 us/op
+# Warmup Iteration   2: 120432,020 us/op
+# Warmup Iteration   3: 127460,800 us/op
+# Warmup Iteration   4: 119410,320 us/op
+# Warmup Iteration   5: 122163,260 us/op
+
+# Warmup Iteration   1: 123282,880 us/op
+# Warmup Iteration   2: 122765,220 us/op
+# Warmup Iteration   3: 118649,560 us/op
+# Warmup Iteration   4: 121316,480 us/op
+# Warmup Iteration   5: 126517,525 us/op
+
+# Warmup Iteration   1: 438805,300 us/op
+# Warmup Iteration   2: 420771,550 us/op
+# Warmup Iteration   3: 422798,650 us/op
+# Warmup Iteration   4: 454393,300 us/op
+# Warmup Iteration   5: 426701,450 us/op
+
+# Warmup Iteration   1: 125021,180 us/op
+# Warmup Iteration   2: 124505,480 us/op
+# Warmup Iteration   3: 115021,620 us/op
+# Warmup Iteration   4: 113904,260 us/op
+# Warmup Iteration   5: 128537,000 us/op
+Iteration   1: 116102,660 us/op
+Iteration   2: 116142,440 us/op
+Iteration   3: 113567,380 us/op
+Iteration   4: 128578,650 us/op
+Iteration   5: 114276,940 us/op
+Iteration   6: 116778,660 us/op
+Iteration   7: 113866,240 us/op
+Iteration   8: 123049,500 us/op
+Iteration   9: 136596,175 us/op
+Iteration  10: 115019,700 us/op
+Iteration  11: 115477,280 us/op
+Iteration  12: 122216,040 us/op
+Iteration  13: 113870,200 us/op
+Iteration  14: 113858,460 us/op
+Iteration  15: 114366,020 us/op
+Iteration  16: 122202,820 us/op
+Iteration  17: 115402,520 us/op
+Iteration  18: 114309,280 us/op
+Iteration  19: 115636,660 us/op
+Iteration  20: 121430,520 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllNativeQuery2_UserDto1_Dynamic":
+  118137,407 ±(99.9%) 5186,489 us/op [Average]
+  (min, avg, max) = (113567,380, 118137,407, 136596,175), stdev = 5972,769
+  CI (99.9%): [112950,918, 123323,896] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllNativeQuery_ObjectArray
+
+# Run progress: 9,36% complete, ETA 03:30:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 775595,700 us/op
+# Warmup Iteration   2: 387927,350 us/op
+# Warmup Iteration   3: 291795,600 us/op
+# Warmup Iteration   4: 383435,700 us/op
+# Warmup Iteration   5: 295709,800 us/op
+
+# Warmup Iteration   1: 157339,750 us/op
+# Warmup Iteration   2: 133016,400 us/op
+# Warmup Iteration   3: 116679,560 us/op
+# Warmup Iteration   4: 115500,500 us/op
+# Warmup Iteration   5: 141660,650 us/op
+
+# Warmup Iteration   1: 117549,020 us/op
+# Warmup Iteration   2: 115787,160 us/op
+# Warmup Iteration   3: 141387,575 us/op
+# Warmup Iteration   4: 109497,780 us/op
+# Warmup Iteration   5: 109915,000 us/op
+
+# Warmup Iteration   1: 112114,840 us/op
+# Warmup Iteration   2: 145497,375 us/op
+# Warmup Iteration   3: 111550,140 us/op
+# Warmup Iteration   4: 112384,440 us/op
+# Warmup Iteration   5: 107941,000 us/op
+
+# Warmup Iteration   1: 123469,380 us/op
+# Warmup Iteration   2: 129672,825 us/op
+# Warmup Iteration   3: 119221,800 us/op
+# Warmup Iteration   4: 129598,600 us/op
+# Warmup Iteration   5: 123961,140 us/op
+
+# Warmup Iteration   1: 652771,200 us/op
+# Warmup Iteration   2: 374611,850 us/op
+# Warmup Iteration   3: 339780,650 us/op
+# Warmup Iteration   4: 339089,900 us/op
+# Warmup Iteration   5: 326229,300 us/op
+
+# Warmup Iteration   1: 137841,200 us/op
+# Warmup Iteration   2: 126152,325 us/op
+# Warmup Iteration   3: 128476,100 us/op
+# Warmup Iteration   4: 129300,100 us/op
+# Warmup Iteration   5: 137678,525 us/op
+
+# Warmup Iteration   1: 152560,500 us/op
+# Warmup Iteration   2: 119931,780 us/op
+# Warmup Iteration   3: 114076,340 us/op
+# Warmup Iteration   4: 141767,900 us/op
+# Warmup Iteration   5: 129072,850 us/op
+
+# Warmup Iteration   1: 116912,520 us/op
+# Warmup Iteration   2: 116858,040 us/op
+# Warmup Iteration   3: 154445,050 us/op
+# Warmup Iteration   4: 131327,875 us/op
+# Warmup Iteration   5: 141869,875 us/op
+
+# Warmup Iteration   1: 129109,775 us/op
+# Warmup Iteration   2: 124631,360 us/op
+# Warmup Iteration   3: 125454,440 us/op
+# Warmup Iteration   4: 120635,460 us/op
+# Warmup Iteration   5: 115960,540 us/op
+
+# Warmup Iteration   1: 140099,025 us/op
+# Warmup Iteration   2: 127616,100 us/op
+# Warmup Iteration   3: 120799,220 us/op
+# Warmup Iteration   4: 123909,920 us/op
+# Warmup Iteration   5: 119660,500 us/op
+
+# Warmup Iteration   1: 359296,150 us/op
+# Warmup Iteration   2: 322395,950 us/op
+# Warmup Iteration   3: 318725,500 us/op
+# Warmup Iteration   4: 319822,450 us/op
+# Warmup Iteration   5: 323359,450 us/op
+
+# Warmup Iteration   1: 129451,400 us/op
+# Warmup Iteration   2: 117532,080 us/op
+# Warmup Iteration   3: 122287,940 us/op
+# Warmup Iteration   4: 121910,540 us/op
+# Warmup Iteration   5: 133534,075 us/op
+
+# Warmup Iteration   1: 403274,300 us/op
+# Warmup Iteration   2: 319130,200 us/op
+# Warmup Iteration   3: 315092,550 us/op
+# Warmup Iteration   4: 354718,650 us/op
+# Warmup Iteration   5: 313913,850 us/op
+
+# Warmup Iteration   1: 117586,380 us/op
+# Warmup Iteration   2: 119751,720 us/op
+# Warmup Iteration   3: 123900,180 us/op
+# Warmup Iteration   4: 132414,500 us/op
+# Warmup Iteration   5: 121643,320 us/op
+
+# Warmup Iteration   1: 117181,720 us/op
+# Warmup Iteration   2: 120056,360 us/op
+# Warmup Iteration   3: 118782,900 us/op
+# Warmup Iteration   4: 117544,100 us/op
+# Warmup Iteration   5: 125110,260 us/op
+
+# Warmup Iteration   1: 506663,000 us/op
+# Warmup Iteration   2: 444753,150 us/op
+# Warmup Iteration   3: 429907,950 us/op
+# Warmup Iteration   4: 450160,650 us/op
+# Warmup Iteration   5: 421810,000 us/op
+
+# Warmup Iteration   1: 114725,420 us/op
+# Warmup Iteration   2: 110163,760 us/op
+# Warmup Iteration   3: 111102,920 us/op
+# Warmup Iteration   4: 110943,940 us/op
+# Warmup Iteration   5: 110224,820 us/op
+Iteration   1: 111444,040 us/op
+Iteration   2: 110510,320 us/op
+Iteration   3: 110508,960 us/op
+Iteration   4: 110884,200 us/op
+Iteration   5: 111525,780 us/op
+Iteration   6: 109883,140 us/op
+Iteration   7: 110191,040 us/op
+Iteration   8: 110108,640 us/op
+Iteration   9: 111757,920 us/op
+Iteration  10: 110833,000 us/op
+Iteration  11: 113933,140 us/op
+Iteration  12: 111331,220 us/op
+Iteration  13: 112219,480 us/op
+Iteration  14: 110737,060 us/op
+Iteration  15: 110687,820 us/op
+Iteration  16: 112138,440 us/op
+Iteration  17: 112637,080 us/op
+Iteration  18: 110377,600 us/op
+Iteration  19: 110123,900 us/op
+Iteration  20: 110491,540 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllNativeQuery_ObjectArray":
+  111116,216 ±(99.9%) 885,390 us/op [Average]
+  (min, avg, max) = (109883,140, 111116,216, 113933,140), stdev = 1019,617
+  CI (99.9%): [110230,826, 112001,606] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllObjectArray
+
+# Run progress: 10,70% complete, ETA 03:27:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 868136,500 us/op
+# Warmup Iteration   2: 650595,000 us/op
+# Warmup Iteration   3: 311826,050 us/op
+# Warmup Iteration   4: 347746,750 us/op
+# Warmup Iteration   5: 363652,050 us/op
+
+# Warmup Iteration   1: 181329,467 us/op
+# Warmup Iteration   2: 135522,775 us/op
+# Warmup Iteration   3: 136575,050 us/op
+# Warmup Iteration   4: 124471,540 us/op
+# Warmup Iteration   5: 141666,250 us/op
+
+# Warmup Iteration   1: 134295,525 us/op
+# Warmup Iteration   2: 138873,500 us/op
+# Warmup Iteration   3: 138134,975 us/op
+# Warmup Iteration   4: 133627,275 us/op
+# Warmup Iteration   5: 143980,625 us/op
+
+# Warmup Iteration   1: 109884,100 us/op
+# Warmup Iteration   2: 105579,520 us/op
+# Warmup Iteration   3: 129997,550 us/op
+# Warmup Iteration   4: 112268,820 us/op
+# Warmup Iteration   5: 130334,050 us/op
+
+# Warmup Iteration   1: 134803,650 us/op
+# Warmup Iteration   2: 122081,800 us/op
+# Warmup Iteration   3: 116158,080 us/op
+# Warmup Iteration   4: 128854,075 us/op
+# Warmup Iteration   5: 126195,625 us/op
+
+# Warmup Iteration   1: 672562,500 us/op
+# Warmup Iteration   2: 373898,000 us/op
+# Warmup Iteration   3: 330757,200 us/op
+# Warmup Iteration   4: 324527,200 us/op
+# Warmup Iteration   5: 344048,250 us/op
+
+# Warmup Iteration   1: 152109,825 us/op
+# Warmup Iteration   2: 120808,200 us/op
+# Warmup Iteration   3: 126985,350 us/op
+# Warmup Iteration   4: 121356,120 us/op
+# Warmup Iteration   5: 177205,200 us/op
+
+# Warmup Iteration   1: 144697,800 us/op
+# Warmup Iteration   2: 121836,860 us/op
+# Warmup Iteration   3: 114948,740 us/op
+# Warmup Iteration   4: 185802,133 us/op
+# Warmup Iteration   5: 136344,050 us/op
+
+# Warmup Iteration   1: 116231,760 us/op
+# Warmup Iteration   2: 123605,820 us/op
+# Warmup Iteration   3: 155013,300 us/op
+# Warmup Iteration   4: 116432,500 us/op
+# Warmup Iteration   5: 146853,875 us/op
+
+# Warmup Iteration   1: 138334,650 us/op
+# Warmup Iteration   2: 122005,460 us/op
+# Warmup Iteration   3: 123359,400 us/op
+# Warmup Iteration   4: 123160,140 us/op
+# Warmup Iteration   5: 115867,000 us/op
+
+# Warmup Iteration   1: 131499,275 us/op
+# Warmup Iteration   2: 121624,320 us/op
+# Warmup Iteration   3: 121007,880 us/op
+# Warmup Iteration   4: 127065,475 us/op
+# Warmup Iteration   5: 151656,900 us/op
+
+# Warmup Iteration   1: 328911,800 us/op
+# Warmup Iteration   2: 324030,650 us/op
+# Warmup Iteration   3: 322893,700 us/op
+# Warmup Iteration   4: 320431,400 us/op
+# Warmup Iteration   5: 320845,250 us/op
+
+# Warmup Iteration   1: 150222,575 us/op
+# Warmup Iteration   2: 119071,160 us/op
+# Warmup Iteration   3: 129815,150 us/op
+# Warmup Iteration   4: 122337,500 us/op
+# Warmup Iteration   5: 119655,500 us/op
+
+# Warmup Iteration   1: 410258,300 us/op
+# Warmup Iteration   2: 338624,550 us/op
+# Warmup Iteration   3: 312238,850 us/op
+# Warmup Iteration   4: 310152,700 us/op
+# Warmup Iteration   5: 326845,800 us/op
+
+# Warmup Iteration   1: 136040,475 us/op
+# Warmup Iteration   2: 122932,440 us/op
+# Warmup Iteration   3: 120892,520 us/op
+# Warmup Iteration   4: 117607,680 us/op
+# Warmup Iteration   5: 126035,975 us/op
+
+# Warmup Iteration   1: 119769,760 us/op
+# Warmup Iteration   2: 125061,700 us/op
+# Warmup Iteration   3: 118469,120 us/op
+# Warmup Iteration   4: 119573,280 us/op
+# Warmup Iteration   5: 118057,960 us/op
+
+# Warmup Iteration   1: 512039,300 us/op
+# Warmup Iteration   2: 449507,650 us/op
+# Warmup Iteration   3: 418288,150 us/op
+# Warmup Iteration   4: 450680,000 us/op
+# Warmup Iteration   5: 420163,200 us/op
+
+# Warmup Iteration   1: 130578,400 us/op
+# Warmup Iteration   2: 116496,880 us/op
+# Warmup Iteration   3: 112861,140 us/op
+# Warmup Iteration   4: 123875,360 us/op
+# Warmup Iteration   5: 111327,840 us/op
+Iteration   1: 112459,120 us/op
+Iteration   2: 129127,425 us/op
+Iteration   3: 119426,020 us/op
+Iteration   4: 111860,440 us/op
+Iteration   5: 119341,920 us/op
+Iteration   6: 112386,300 us/op
+Iteration   7: 115821,440 us/op
+Iteration   8: 112186,140 us/op
+Iteration   9: 111984,860 us/op
+Iteration  10: 112003,020 us/op
+Iteration  11: 123354,580 us/op
+Iteration  12: 112115,080 us/op
+Iteration  13: 110913,580 us/op
+Iteration  14: 117530,120 us/op
+Iteration  15: 121984,840 us/op
+Iteration  16: 111269,480 us/op
+Iteration  17: 112075,900 us/op
+Iteration  18: 112547,060 us/op
+Iteration  19: 117147,180 us/op
+Iteration  20: 110840,960 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllObjectArray":
+  115318,773 ±(99.9%) 4392,695 us/op [Average]
+  (min, avg, max) = (110840,960, 115318,773, 129127,425), stdev = 5058,634
+  CI (99.9%): [110926,078, 119711,468] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllStream_User
+
+# Run progress: 12,03% complete, ETA 03:24:18
+# Fork: 1 of 1
+# Warmup Iteration   1: 867856,600 us/op
+# Warmup Iteration   2: 532031,000 us/op
+# Warmup Iteration   3: 309601,150 us/op
+# Warmup Iteration   4: 321549,150 us/op
+# Warmup Iteration   5: 302511,150 us/op
+
+# Warmup Iteration   1: 183156,933 us/op
+# Warmup Iteration   2: 132500,575 us/op
+# Warmup Iteration   3: 127802,625 us/op
+# Warmup Iteration   4: 145952,200 us/op
+# Warmup Iteration   5: 172259,433 us/op
+
+# Warmup Iteration   1: 147902,450 us/op
+# Warmup Iteration   2: 137724,050 us/op
+# Warmup Iteration   3: 131715,625 us/op
+# Warmup Iteration   4: 119250,920 us/op
+# Warmup Iteration   5: 129573,050 us/op
+
+# Warmup Iteration   1: 154056,625 us/op
+# Warmup Iteration   2: 129933,875 us/op
+# Warmup Iteration   3: 114802,620 us/op
+# Warmup Iteration   4: 113684,960 us/op
+# Warmup Iteration   5: 121075,260 us/op
+
+# Warmup Iteration   1: 121236,360 us/op
+# Warmup Iteration   2: 116516,360 us/op
+# Warmup Iteration   3: 128963,950 us/op
+# Warmup Iteration   4: 120958,000 us/op
+# Warmup Iteration   5: 121555,780 us/op
+
+# Warmup Iteration   1: 653935,100 us/op
+# Warmup Iteration   2: 378413,300 us/op
+# Warmup Iteration   3: 340513,300 us/op
+# Warmup Iteration   4: 323969,150 us/op
+# Warmup Iteration   5: 335794,800 us/op
+
+# Warmup Iteration   1: 139291,075 us/op
+# Warmup Iteration   2: 125279,100 us/op
+# Warmup Iteration   3: 137991,375 us/op
+# Warmup Iteration   4: 123750,660 us/op
+# Warmup Iteration   5: 130234,950 us/op
+
+# Warmup Iteration   1: 120504,840 us/op
+# Warmup Iteration   2: 116806,480 us/op
+# Warmup Iteration   3: 114954,220 us/op
+# Warmup Iteration   4: 120695,260 us/op
+# Warmup Iteration   5: 121066,480 us/op
+
+# Warmup Iteration   1: 117812,520 us/op
+# Warmup Iteration   2: 127820,800 us/op
+# Warmup Iteration   3: 117953,220 us/op
+# Warmup Iteration   4: 137866,975 us/op
+# Warmup Iteration   5: 128354,020 us/op
+
+# Warmup Iteration   1: 115997,580 us/op
+# Warmup Iteration   2: 178647,533 us/op
+# Warmup Iteration   3: 118014,060 us/op
+# Warmup Iteration   4: 137790,375 us/op
+# Warmup Iteration   5: 119410,800 us/op
+
+# Warmup Iteration   1: 143667,800 us/op
+# Warmup Iteration   2: 122071,120 us/op
+# Warmup Iteration   3: 123980,000 us/op
+# Warmup Iteration   4: 118048,580 us/op
+# Warmup Iteration   5: 129821,325 us/op
+
+# Warmup Iteration   1: 355370,250 us/op
+# Warmup Iteration   2: 324184,850 us/op
+# Warmup Iteration   3: 319506,250 us/op
+# Warmup Iteration   4: 317050,600 us/op
+# Warmup Iteration   5: 330264,350 us/op
+
+# Warmup Iteration   1: 118313,860 us/op
+# Warmup Iteration   2: 119861,180 us/op
+# Warmup Iteration   3: 127718,125 us/op
+# Warmup Iteration   4: 138047,100 us/op
+# Warmup Iteration   5: 121184,300 us/op
+
+# Warmup Iteration   1: 491317,050 us/op
+# Warmup Iteration   2: 402651,800 us/op
+# Warmup Iteration   3: 315644,800 us/op
+# Warmup Iteration   4: 331494,700 us/op
+# Warmup Iteration   5: 337697,200 us/op
+
+# Warmup Iteration   1: 120512,320 us/op
+# Warmup Iteration   2: 135201,900 us/op
+# Warmup Iteration   3: 120481,900 us/op
+# Warmup Iteration   4: 118433,760 us/op
+# Warmup Iteration   5: 118125,580 us/op
+
+# Warmup Iteration   1: 126830,250 us/op
+# Warmup Iteration   2: 128135,150 us/op
+# Warmup Iteration   3: 118067,740 us/op
+# Warmup Iteration   4: 126869,150 us/op
+# Warmup Iteration   5: 121733,200 us/op
+
+# Warmup Iteration   1: 427243,500 us/op
+# Warmup Iteration   2: 425310,550 us/op
+# Warmup Iteration   3: 423135,750 us/op
+# Warmup Iteration   4: 423306,950 us/op
+# Warmup Iteration   5: 418881,300 us/op
+
+# Warmup Iteration   1: 123286,740 us/op
+# Warmup Iteration   2: 111028,920 us/op
+# Warmup Iteration   3: 118570,720 us/op
+# Warmup Iteration   4: 109894,140 us/op
+# Warmup Iteration   5: 109958,080 us/op
+Iteration   1: 110312,860 us/op
+Iteration   2: 119271,420 us/op
+Iteration   3: 110372,240 us/op
+Iteration   4: 110031,740 us/op
+Iteration   5: 111787,340 us/op
+Iteration   6: 116295,940 us/op
+Iteration   7: 110158,780 us/op
+Iteration   8: 111197,500 us/op
+Iteration   9: 113531,280 us/op
+Iteration  10: 117446,180 us/op
+Iteration  11: 110385,800 us/op
+Iteration  12: 110885,260 us/op
+Iteration  13: 112530,660 us/op
+Iteration  14: 121678,400 us/op
+Iteration  15: 110659,240 us/op
+Iteration  16: 110358,060 us/op
+Iteration  17: 111058,060 us/op
+Iteration  18: 119005,640 us/op
+Iteration  19: 146041,100 us/op
+Iteration  20: 118210,400 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllStream_User":
+  115060,895 ±(99.9%) 7124,611 us/op [Average]
+  (min, avg, max) = (110031,740, 115060,895, 146041,100), stdev = 8204,713
+  CI (99.9%): [107936,284, 122185,506] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllTuple_UserDto1
+
+# Run progress: 13,37% complete, ETA 03:21:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 824466,100 us/op
+# Warmup Iteration   2: 415586,750 us/op
+# Warmup Iteration   3: 398977,000 us/op
+# Warmup Iteration   4: 425035,500 us/op
+# Warmup Iteration   5: 268964,300 us/op
+
+# Warmup Iteration   1: 172683,733 us/op
+# Warmup Iteration   2: 152427,425 us/op
+# Warmup Iteration   3: 130534,775 us/op
+# Warmup Iteration   4: 133989,825 us/op
+# Warmup Iteration   5: 112055,960 us/op
+
+# Warmup Iteration   1: 168159,100 us/op
+# Warmup Iteration   2: 111488,320 us/op
+# Warmup Iteration   3: 143159,625 us/op
+# Warmup Iteration   4: 128524,775 us/op
+# Warmup Iteration   5: 127966,325 us/op
+
+# Warmup Iteration   1: 112876,940 us/op
+# Warmup Iteration   2: 130509,550 us/op
+# Warmup Iteration   3: 108368,980 us/op
+# Warmup Iteration   4: 136700,200 us/op
+# Warmup Iteration   5: 113716,180 us/op
+
+# Warmup Iteration   1: 139805,825 us/op
+# Warmup Iteration   2: 123840,100 us/op
+# Warmup Iteration   3: 131454,450 us/op
+# Warmup Iteration   4: 115729,700 us/op
+# Warmup Iteration   5: 184022,800 us/op
+
+# Warmup Iteration   1: 731299,600 us/op
+# Warmup Iteration   2: 381899,000 us/op
+# Warmup Iteration   3: 323131,400 us/op
+# Warmup Iteration   4: 345805,550 us/op
+# Warmup Iteration   5: 322496,950 us/op
+
+# Warmup Iteration   1: 131955,625 us/op
+# Warmup Iteration   2: 130084,475 us/op
+# Warmup Iteration   3: 118194,740 us/op
+# Warmup Iteration   4: 135403,225 us/op
+# Warmup Iteration   5: 154786,425 us/op
+
+# Warmup Iteration   1: 149731,000 us/op
+# Warmup Iteration   2: 127800,825 us/op
+# Warmup Iteration   3: 115431,080 us/op
+# Warmup Iteration   4: 116639,540 us/op
+# Warmup Iteration   5: 120339,380 us/op
+
+# Warmup Iteration   1: 114681,400 us/op
+# Warmup Iteration   2: 123133,600 us/op
+# Warmup Iteration   3: 152041,050 us/op
+# Warmup Iteration   4: 114814,480 us/op
+# Warmup Iteration   5: 146611,250 us/op
+
+# Warmup Iteration   1: 117471,560 us/op
+# Warmup Iteration   2: 121279,400 us/op
+# Warmup Iteration   3: 115937,920 us/op
+# Warmup Iteration   4: 152655,250 us/op
+# Warmup Iteration   5: 125742,925 us/op
+
+# Warmup Iteration   1: 129993,650 us/op
+# Warmup Iteration   2: 119599,500 us/op
+# Warmup Iteration   3: 134690,450 us/op
+# Warmup Iteration   4: 125237,780 us/op
+# Warmup Iteration   5: 124744,920 us/op
+
+# Warmup Iteration   1: 349498,450 us/op
+# Warmup Iteration   2: 328251,000 us/op
+# Warmup Iteration   3: 341109,450 us/op
+# Warmup Iteration   4: 330541,650 us/op
+# Warmup Iteration   5: 350026,600 us/op
+
+# Warmup Iteration   1: 130600,150 us/op
+# Warmup Iteration   2: 118563,580 us/op
+# Warmup Iteration   3: 142588,875 us/op
+# Warmup Iteration   4: 117596,280 us/op
+# Warmup Iteration   5: 118717,260 us/op
+
+# Warmup Iteration   1: 529474,850 us/op
+# Warmup Iteration   2: 384864,200 us/op
+# Warmup Iteration   3: 323975,200 us/op
+# Warmup Iteration   4: 351044,250 us/op
+# Warmup Iteration   5: 360161,150 us/op
+
+# Warmup Iteration   1: 120354,240 us/op
+# Warmup Iteration   2: 168788,733 us/op
+# Warmup Iteration   3: 124847,360 us/op
+# Warmup Iteration   4: 118579,120 us/op
+# Warmup Iteration   5: 132653,825 us/op
+
+# Warmup Iteration   1: 126485,875 us/op
+# Warmup Iteration   2: 119250,740 us/op
+# Warmup Iteration   3: 121532,460 us/op
+# Warmup Iteration   4: 117885,400 us/op
+# Warmup Iteration   5: 117539,860 us/op
+
+# Warmup Iteration   1: 533382,000 us/op
+# Warmup Iteration   2: 452665,500 us/op
+# Warmup Iteration   3: 425951,300 us/op
+# Warmup Iteration   4: 448408,150 us/op
+# Warmup Iteration   5: 437218,250 us/op
+
+# Warmup Iteration   1: 130156,375 us/op
+# Warmup Iteration   2: 117499,800 us/op
+# Warmup Iteration   3: 117059,760 us/op
+# Warmup Iteration   4: 116170,260 us/op
+# Warmup Iteration   5: 116777,640 us/op
+Iteration   1: 117595,280 us/op
+Iteration   2: 116104,300 us/op
+Iteration   3: 116389,260 us/op
+Iteration   4: 115111,400 us/op
+Iteration   5: 133188,100 us/op
+Iteration   6: 168931,500 us/op
+Iteration   7: 120662,320 us/op
+Iteration   8: 117925,820 us/op
+Iteration   9: 123488,840 us/op
+Iteration  10: 116582,100 us/op
+Iteration  11: 114988,540 us/op
+Iteration  12: 115371,220 us/op
+Iteration  13: 118930,180 us/op
+Iteration  14: 117852,220 us/op
+Iteration  15: 142726,300 us/op
+Iteration  16: 119538,140 us/op
+Iteration  17: 130312,625 us/op
+Iteration  18: 116127,000 us/op
+Iteration  19: 116914,400 us/op
+Iteration  20: 115915,420 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllTuple_UserDto1":
+  122732,748 ±(99.9%) 11307,772 us/op [Average]
+  (min, avg, max) = (114988,540, 122732,748, 168931,500), stdev = 13022,047
+  CI (99.9%): [111424,977, 134040,520] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAll_User_JPA
+
+# Run progress: 14,71% complete, ETA 03:18:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 834009,500 us/op
+# Warmup Iteration   2: 538180,200 us/op
+# Warmup Iteration   3: 368594,250 us/op
+# Warmup Iteration   4: 352716,050 us/op
+# Warmup Iteration   5: 279373,150 us/op
+
+# Warmup Iteration   1: 208060,667 us/op
+# Warmup Iteration   2: 130468,950 us/op
+# Warmup Iteration   3: 133017,750 us/op
+# Warmup Iteration   4: 127201,100 us/op
+# Warmup Iteration   5: 117085,120 us/op
+
+# Warmup Iteration   1: 143641,225 us/op
+# Warmup Iteration   2: 119144,040 us/op
+# Warmup Iteration   3: 117628,940 us/op
+# Warmup Iteration   4: 132929,400 us/op
+# Warmup Iteration   5: 135202,500 us/op
+
+# Warmup Iteration   1: 116393,140 us/op
+# Warmup Iteration   2: 115390,620 us/op
+# Warmup Iteration   3: 112918,300 us/op
+# Warmup Iteration   4: 115665,640 us/op
+# Warmup Iteration   5: 140047,900 us/op
+
+# Warmup Iteration   1: 133911,000 us/op
+# Warmup Iteration   2: 131762,175 us/op
+# Warmup Iteration   3: 122118,460 us/op
+# Warmup Iteration   4: 115951,080 us/op
+# Warmup Iteration   5: 127028,600 us/op
+
+# Warmup Iteration   1: 629496,000 us/op
+# Warmup Iteration   2: 366197,250 us/op
+# Warmup Iteration   3: 336107,500 us/op
+# Warmup Iteration   4: 321314,400 us/op
+# Warmup Iteration   5: 325968,100 us/op
+
+# Warmup Iteration   1: 135929,225 us/op
+# Warmup Iteration   2: 116647,240 us/op
+# Warmup Iteration   3: 115917,320 us/op
+# Warmup Iteration   4: 119161,180 us/op
+# Warmup Iteration   5: 160202,375 us/op
+
+# Warmup Iteration   1: 127402,100 us/op
+# Warmup Iteration   2: 116908,240 us/op
+# Warmup Iteration   3: 116024,440 us/op
+# Warmup Iteration   4: 114151,860 us/op
+# Warmup Iteration   5: 115908,480 us/op
+
+# Warmup Iteration   1: 113217,000 us/op
+# Warmup Iteration   2: 118497,400 us/op
+# Warmup Iteration   3: 151144,250 us/op
+# Warmup Iteration   4: 120867,280 us/op
+# Warmup Iteration   5: 139127,250 us/op
+
+# Warmup Iteration   1: 145827,850 us/op
+# Warmup Iteration   2: 147482,375 us/op
+# Warmup Iteration   3: 121856,300 us/op
+# Warmup Iteration   4: 122881,260 us/op
+# Warmup Iteration   5: 145637,975 us/op
+
+# Warmup Iteration   1: 122500,000 us/op
+# Warmup Iteration   2: 128625,575 us/op
+# Warmup Iteration   3: 128585,875 us/op
+# Warmup Iteration   4: 130101,475 us/op
+# Warmup Iteration   5: 125731,375 us/op
+
+# Warmup Iteration   1: 324454,500 us/op
+# Warmup Iteration   2: 335275,000 us/op
+# Warmup Iteration   3: 341875,650 us/op
+# Warmup Iteration   4: 319594,000 us/op
+# Warmup Iteration   5: 321033,650 us/op
+
+# Warmup Iteration   1: 149090,750 us/op
+# Warmup Iteration   2: 128523,100 us/op
+# Warmup Iteration   3: 128162,075 us/op
+# Warmup Iteration   4: 122385,520 us/op
+# Warmup Iteration   5: 119638,620 us/op
+
+# Warmup Iteration   1: 406214,850 us/op
+# Warmup Iteration   2: 326276,350 us/op
+# Warmup Iteration   3: 341374,700 us/op
+# Warmup Iteration   4: 343385,150 us/op
+# Warmup Iteration   5: 328427,750 us/op
+
+# Warmup Iteration   1: 122690,300 us/op
+# Warmup Iteration   2: 120236,920 us/op
+# Warmup Iteration   3: 120070,100 us/op
+# Warmup Iteration   4: 118781,760 us/op
+# Warmup Iteration   5: 147446,350 us/op
+
+# Warmup Iteration   1: 118613,180 us/op
+# Warmup Iteration   2: 127123,725 us/op
+# Warmup Iteration   3: 125921,160 us/op
+# Warmup Iteration   4: 124940,760 us/op
+# Warmup Iteration   5: 119910,180 us/op
+
+# Warmup Iteration   1: 519879,000 us/op
+# Warmup Iteration   2: 439160,950 us/op
+# Warmup Iteration   3: 433536,400 us/op
+# Warmup Iteration   4: 523208,900 us/op
+# Warmup Iteration   5: 430578,800 us/op
+
+# Warmup Iteration   1: 346056,450 us/op
+# Warmup Iteration   2: 307845,250 us/op
+# Warmup Iteration   3: 306558,000 us/op
+# Warmup Iteration   4: 305473,600 us/op
+# Warmup Iteration   5: 308492,550 us/op
+Iteration   1: 313008,500 us/op
+Iteration   2: 308962,050 us/op
+Iteration   3: 308574,500 us/op
+Iteration   4: 309283,850 us/op
+Iteration   5: 321253,150 us/op
+Iteration   6: 381861,300 us/op
+Iteration   7: 310062,800 us/op
+Iteration   8: 308467,450 us/op
+Iteration   9: 309045,000 us/op
+Iteration  10: 312627,700 us/op
+Iteration  11: 307943,950 us/op
+Iteration  12: 307867,400 us/op
+Iteration  13: 309119,700 us/op
+Iteration  14: 308923,150 us/op
+Iteration  15: 307379,750 us/op
+Iteration  16: 310568,000 us/op
+Iteration  17: 307677,750 us/op
+Iteration  18: 309949,900 us/op
+Iteration  19: 309259,850 us/op
+Iteration  20: 318084,300 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAll_User_JPA":
+  313996,003 ±(99.9%) 14203,533 us/op [Average]
+  (min, avg, max) = (307379,750, 313996,003, 381861,300), stdev = 16356,810
+  CI (99.9%): [299792,470, 328199,535] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findBy_UserDto1_dynamic
+
+# Run progress: 16,04% complete, ETA 03:14:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 843204,000 us/op
+# Warmup Iteration   2: 590751,800 us/op
+# Warmup Iteration   3: 389134,300 us/op
+# Warmup Iteration   4: 399735,150 us/op
+# Warmup Iteration   5: 309223,450 us/op
+
+# Warmup Iteration   1: 287491,900 us/op
+# Warmup Iteration   2: 153268,275 us/op
+# Warmup Iteration   3: 120822,960 us/op
+# Warmup Iteration   4: 142541,950 us/op
+# Warmup Iteration   5: 125906,160 us/op
+
+# Warmup Iteration   1: 153794,325 us/op
+# Warmup Iteration   2: 113071,400 us/op
+# Warmup Iteration   3: 135570,650 us/op
+# Warmup Iteration   4: 112246,120 us/op
+# Warmup Iteration   5: 171904,500 us/op
+
+# Warmup Iteration   1: 112045,320 us/op
+# Warmup Iteration   2: 117066,540 us/op
+# Warmup Iteration   3: 134571,350 us/op
+# Warmup Iteration   4: 112591,840 us/op
+# Warmup Iteration   5: 108500,240 us/op
+
+# Warmup Iteration   1: 134100,775 us/op
+# Warmup Iteration   2: 121116,900 us/op
+# Warmup Iteration   3: 120740,840 us/op
+# Warmup Iteration   4: 120036,440 us/op
+# Warmup Iteration   5: 118632,280 us/op
+
+# Warmup Iteration   1: 663945,900 us/op
+# Warmup Iteration   2: 353976,150 us/op
+# Warmup Iteration   3: 327658,950 us/op
+# Warmup Iteration   4: 319799,100 us/op
+# Warmup Iteration   5: 319777,800 us/op
+
+# Warmup Iteration   1: 146753,225 us/op
+# Warmup Iteration   2: 118720,580 us/op
+# Warmup Iteration   3: 119345,380 us/op
+# Warmup Iteration   4: 121955,280 us/op
+# Warmup Iteration   5: 142207,500 us/op
+
+# Warmup Iteration   1: 121137,260 us/op
+# Warmup Iteration   2: 116029,120 us/op
+# Warmup Iteration   3: 115026,640 us/op
+# Warmup Iteration   4: 116043,660 us/op
+# Warmup Iteration   5: 124933,800 us/op
+
+# Warmup Iteration   1: 116291,560 us/op
+# Warmup Iteration   2: 117956,900 us/op
+# Warmup Iteration   3: 144407,550 us/op
+# Warmup Iteration   4: 142222,550 us/op
+# Warmup Iteration   5: 137301,175 us/op
+
+# Warmup Iteration   1: 121198,520 us/op
+# Warmup Iteration   2: 124208,720 us/op
+# Warmup Iteration   3: 118875,880 us/op
+# Warmup Iteration   4: 151347,575 us/op
+# Warmup Iteration   5: 118745,040 us/op
+
+# Warmup Iteration   1: 135808,400 us/op
+# Warmup Iteration   2: 135008,575 us/op
+# Warmup Iteration   3: 128655,200 us/op
+# Warmup Iteration   4: 119044,760 us/op
+# Warmup Iteration   5: 129741,875 us/op
+
+# Warmup Iteration   1: 331860,400 us/op
+# Warmup Iteration   2: 346302,250 us/op
+# Warmup Iteration   3: 322551,250 us/op
+# Warmup Iteration   4: 315447,450 us/op
+# Warmup Iteration   5: 338758,750 us/op
+
+# Warmup Iteration   1: 119801,220 us/op
+# Warmup Iteration   2: 123009,800 us/op
+# Warmup Iteration   3: 121286,060 us/op
+# Warmup Iteration   4: 119677,400 us/op
+# Warmup Iteration   5: 120255,920 us/op
+
+# Warmup Iteration   1: 524745,200 us/op
+# Warmup Iteration   2: 476088,050 us/op
+# Warmup Iteration   3: 321212,900 us/op
+# Warmup Iteration   4: 333667,950 us/op
+# Warmup Iteration   5: 339188,950 us/op
+
+# Warmup Iteration   1: 122371,640 us/op
+# Warmup Iteration   2: 133637,100 us/op
+# Warmup Iteration   3: 126927,650 us/op
+# Warmup Iteration   4: 126824,440 us/op
+# Warmup Iteration   5: 141375,825 us/op
+
+# Warmup Iteration   1: 123995,300 us/op
+# Warmup Iteration   2: 120904,620 us/op
+# Warmup Iteration   3: 118216,060 us/op
+# Warmup Iteration   4: 118766,820 us/op
+# Warmup Iteration   5: 120326,540 us/op
+
+# Warmup Iteration   1: 428274,550 us/op
+# Warmup Iteration   2: 421606,400 us/op
+# Warmup Iteration   3: 474217,000 us/op
+# Warmup Iteration   4: 419740,650 us/op
+# Warmup Iteration   5: 434237,900 us/op
+
+# Warmup Iteration   1: 117884,240 us/op
+# Warmup Iteration   2: 113866,360 us/op
+# Warmup Iteration   3: 115499,900 us/op
+# Warmup Iteration   4: 114781,060 us/op
+# Warmup Iteration   5: 115057,140 us/op
+Iteration   1: 114518,020 us/op
+Iteration   2: 114130,180 us/op
+Iteration   3: 114535,440 us/op
+Iteration   4: 114711,460 us/op
+Iteration   5: 116641,440 us/op
+Iteration   6: 114070,060 us/op
+Iteration   7: 114832,500 us/op
+Iteration   8: 115654,760 us/op
+Iteration   9: 113038,660 us/op
+Iteration  10: 113046,340 us/op
+Iteration  11: 114997,520 us/op
+Iteration  12: 113015,620 us/op
+Iteration  13: 114725,800 us/op
+Iteration  14: 113717,520 us/op
+Iteration  15: 115160,760 us/op
+Iteration  16: 113785,760 us/op
+Iteration  17: 113719,320 us/op
+Iteration  18: 113898,940 us/op
+Iteration  19: 114097,200 us/op
+Iteration  20: 112906,880 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findBy_UserDto1_dynamic":
+  114260,209 ±(99.9%) 826,879 us/op [Average]
+  (min, avg, max) = (112906,880, 114260,209, 116641,440), stdev = 952,235
+  CI (99.9%): [113433,330, 115087,088] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findBy_UserProjection_Dynamic
+
+# Run progress: 17,38% complete, ETA 03:11:52
+# Fork: 1 of 1
+# Warmup Iteration   1: 846601,400 us/op
+# Warmup Iteration   2: 532490,800 us/op
+# Warmup Iteration   3: 436593,300 us/op
+# Warmup Iteration   4: 380783,300 us/op
+# Warmup Iteration   5: 277925,300 us/op
+
+# Warmup Iteration   1: 153514,150 us/op
+# Warmup Iteration   2: 148889,575 us/op
+# Warmup Iteration   3: 116467,480 us/op
+# Warmup Iteration   4: 121161,600 us/op
+# Warmup Iteration   5: 115505,280 us/op
+
+# Warmup Iteration   1: 135560,375 us/op
+# Warmup Iteration   2: 117201,480 us/op
+# Warmup Iteration   3: 128440,600 us/op
+# Warmup Iteration   4: 112561,800 us/op
+# Warmup Iteration   5: 127974,875 us/op
+
+# Warmup Iteration   1: 114828,080 us/op
+# Warmup Iteration   2: 118225,860 us/op
+# Warmup Iteration   3: 117496,260 us/op
+# Warmup Iteration   4: 119465,780 us/op
+# Warmup Iteration   5: 148686,725 us/op
+
+# Warmup Iteration   1: 198639,933 us/op
+# Warmup Iteration   2: 149985,475 us/op
+# Warmup Iteration   3: 132367,500 us/op
+# Warmup Iteration   4: 124783,840 us/op
+# Warmup Iteration   5: 121455,700 us/op
+
+# Warmup Iteration   1: 716085,700 us/op
+# Warmup Iteration   2: 371736,850 us/op
+# Warmup Iteration   3: 339357,350 us/op
+# Warmup Iteration   4: 332332,450 us/op
+# Warmup Iteration   5: 323442,650 us/op
+
+# Warmup Iteration   1: 139449,800 us/op
+# Warmup Iteration   2: 142982,450 us/op
+# Warmup Iteration   3: 130140,650 us/op
+# Warmup Iteration   4: 124010,220 us/op
+# Warmup Iteration   5: 181708,533 us/op
+
+# Warmup Iteration   1: 145359,900 us/op
+# Warmup Iteration   2: 120762,720 us/op
+# Warmup Iteration   3: 115629,840 us/op
+# Warmup Iteration   4: 116760,640 us/op
+# Warmup Iteration   5: 117561,960 us/op
+
+# Warmup Iteration   1: 116437,100 us/op
+# Warmup Iteration   2: 118346,220 us/op
+# Warmup Iteration   3: 146809,575 us/op
+# Warmup Iteration   4: 117364,160 us/op
+# Warmup Iteration   5: 147000,425 us/op
+
+# Warmup Iteration   1: 129461,275 us/op
+# Warmup Iteration   2: 142619,825 us/op
+# Warmup Iteration   3: 117567,440 us/op
+# Warmup Iteration   4: 137149,225 us/op
+# Warmup Iteration   5: 142639,425 us/op
+
+# Warmup Iteration   1: 126626,025 us/op
+# Warmup Iteration   2: 121566,000 us/op
+# Warmup Iteration   3: 131361,875 us/op
+# Warmup Iteration   4: 135326,250 us/op
+# Warmup Iteration   5: 124536,280 us/op
+
+# Warmup Iteration   1: 352549,400 us/op
+# Warmup Iteration   2: 325870,950 us/op
+# Warmup Iteration   3: 325174,100 us/op
+# Warmup Iteration   4: 337794,150 us/op
+# Warmup Iteration   5: 329476,250 us/op
+
+# Warmup Iteration   1: 141009,850 us/op
+# Warmup Iteration   2: 120920,360 us/op
+# Warmup Iteration   3: 127414,700 us/op
+# Warmup Iteration   4: 120494,000 us/op
+# Warmup Iteration   5: 119027,300 us/op
+
+# Warmup Iteration   1: 408317,150 us/op
+# Warmup Iteration   2: 333669,350 us/op
+# Warmup Iteration   3: 320243,400 us/op
+# Warmup Iteration   4: 345617,450 us/op
+# Warmup Iteration   5: 315167,450 us/op
+
+# Warmup Iteration   1: 137550,300 us/op
+# Warmup Iteration   2: 122627,260 us/op
+# Warmup Iteration   3: 126695,375 us/op
+# Warmup Iteration   4: 120882,260 us/op
+# Warmup Iteration   5: 174215,033 us/op
+
+# Warmup Iteration   1: 125904,425 us/op
+# Warmup Iteration   2: 130937,875 us/op
+# Warmup Iteration   3: 130289,050 us/op
+# Warmup Iteration   4: 136011,550 us/op
+# Warmup Iteration   5: 120311,720 us/op
+
+# Warmup Iteration   1: 520395,250 us/op
+# Warmup Iteration   2: 424486,950 us/op
+# Warmup Iteration   3: 422315,350 us/op
+# Warmup Iteration   4: 443927,000 us/op
+# Warmup Iteration   5: 426480,150 us/op
+
+# Warmup Iteration   1: 312808,100 us/op
+# Warmup Iteration   2: 310560,350 us/op
+# Warmup Iteration   3: 308299,600 us/op
+# Warmup Iteration   4: 307550,450 us/op
+# Warmup Iteration   5: 307616,300 us/op
+Iteration   1: 307751,650 us/op
+Iteration   2: 329094,500 us/op
+Iteration   3: 306668,700 us/op
+Iteration   4: 307498,850 us/op
+Iteration   5: 305691,100 us/op
+Iteration   6: 305321,000 us/op
+Iteration   7: 307481,850 us/op
+Iteration   8: 309453,650 us/op
+Iteration   9: 317096,950 us/op
+Iteration  10: 305767,000 us/op
+Iteration  11: 306463,300 us/op
+Iteration  12: 308133,100 us/op
+Iteration  13: 315874,150 us/op
+Iteration  14: 306412,750 us/op
+Iteration  15: 305721,900 us/op
+Iteration  16: 306027,550 us/op
+Iteration  17: 319457,000 us/op
+Iteration  18: 307133,450 us/op
+Iteration  19: 306319,850 us/op
+Iteration  20: 307466,000 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findBy_UserProjection_Dynamic":
+  309541,715 ±(99.9%) 5320,403 us/op [Average]
+  (min, avg, max) = (305321,000, 309541,715, 329094,500), stdev = 6126,984
+  CI (99.9%): [304221,312, 314862,118] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findUserDto1_UserDto11_EntityToDTO
+
+# Run progress: 18,72% complete, ETA 03:08:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 859771,800 us/op
+# Warmup Iteration   2: 520999,600 us/op
+# Warmup Iteration   3: 342192,300 us/op
+# Warmup Iteration   4: 347588,750 us/op
+# Warmup Iteration   5: 284459,900 us/op
+
+# Warmup Iteration   1: 181782,600 us/op
+# Warmup Iteration   2: 139690,725 us/op
+# Warmup Iteration   3: 125909,100 us/op
+# Warmup Iteration   4: 123320,880 us/op
+# Warmup Iteration   5: 121409,580 us/op
+
+# Warmup Iteration   1: 133214,300 us/op
+# Warmup Iteration   2: 126544,150 us/op
+# Warmup Iteration   3: 145539,325 us/op
+# Warmup Iteration   4: 114243,320 us/op
+# Warmup Iteration   5: 119400,660 us/op
+
+# Warmup Iteration   1: 132356,350 us/op
+# Warmup Iteration   2: 121329,100 us/op
+# Warmup Iteration   3: 122506,660 us/op
+# Warmup Iteration   4: 117635,400 us/op
+# Warmup Iteration   5: 111244,100 us/op
+
+# Warmup Iteration   1: 124570,440 us/op
+# Warmup Iteration   2: 133661,175 us/op
+# Warmup Iteration   3: 117693,820 us/op
+# Warmup Iteration   4: 116427,800 us/op
+# Warmup Iteration   5: 131514,900 us/op
+
+# Warmup Iteration   1: 687864,200 us/op
+# Warmup Iteration   2: 363839,850 us/op
+# Warmup Iteration   3: 371973,850 us/op
+# Warmup Iteration   4: 411876,200 us/op
+# Warmup Iteration   5: 323978,700 us/op
+
+# Warmup Iteration   1: 142360,225 us/op
+# Warmup Iteration   2: 117449,240 us/op
+# Warmup Iteration   3: 120539,920 us/op
+# Warmup Iteration   4: 120632,600 us/op
+# Warmup Iteration   5: 172718,600 us/op
+
+# Warmup Iteration   1: 152783,075 us/op
+# Warmup Iteration   2: 122321,320 us/op
+# Warmup Iteration   3: 117415,740 us/op
+# Warmup Iteration   4: 114376,260 us/op
+# Warmup Iteration   5: 136976,350 us/op
+
+# Warmup Iteration   1: 114780,980 us/op
+# Warmup Iteration   2: 129368,075 us/op
+# Warmup Iteration   3: 151676,800 us/op
+# Warmup Iteration   4: 122255,540 us/op
+# Warmup Iteration   5: 148747,625 us/op
+
+# Warmup Iteration   1: 117694,960 us/op
+# Warmup Iteration   2: 132552,600 us/op
+# Warmup Iteration   3: 113986,660 us/op
+# Warmup Iteration   4: 129312,075 us/op
+# Warmup Iteration   5: 118986,680 us/op
+
+# Warmup Iteration   1: 130382,850 us/op
+# Warmup Iteration   2: 119262,180 us/op
+# Warmup Iteration   3: 131779,400 us/op
+# Warmup Iteration   4: 129175,800 us/op
+# Warmup Iteration   5: 130598,900 us/op
+
+# Warmup Iteration   1: 366177,450 us/op
+# Warmup Iteration   2: 342648,550 us/op
+# Warmup Iteration   3: 316085,950 us/op
+# Warmup Iteration   4: 322593,700 us/op
+# Warmup Iteration   5: 330310,000 us/op
+
+# Warmup Iteration   1: 120855,440 us/op
+# Warmup Iteration   2: 129090,850 us/op
+# Warmup Iteration   3: 117139,080 us/op
+# Warmup Iteration   4: 118355,180 us/op
+# Warmup Iteration   5: 120481,960 us/op
+
+# Warmup Iteration   1: 451717,600 us/op
+# Warmup Iteration   2: 416195,850 us/op
+# Warmup Iteration   3: 325451,450 us/op
+# Warmup Iteration   4: 318248,450 us/op
+# Warmup Iteration   5: 318290,150 us/op
+
+# Warmup Iteration   1: 147828,250 us/op
+# Warmup Iteration   2: 121087,680 us/op
+# Warmup Iteration   3: 119382,920 us/op
+# Warmup Iteration   4: 129476,775 us/op
+# Warmup Iteration   5: 126993,675 us/op
+
+# Warmup Iteration   1: 116763,560 us/op
+# Warmup Iteration   2: 133860,275 us/op
+# Warmup Iteration   3: 120267,580 us/op
+# Warmup Iteration   4: 117529,760 us/op
+# Warmup Iteration   5: 117607,000 us/op
+
+# Warmup Iteration   1: 534427,100 us/op
+# Warmup Iteration   2: 423587,000 us/op
+# Warmup Iteration   3: 419974,350 us/op
+# Warmup Iteration   4: 458307,350 us/op
+# Warmup Iteration   5: 443316,550 us/op
+
+# Warmup Iteration   1: 140305,900 us/op
+# Warmup Iteration   2: 113816,880 us/op
+# Warmup Iteration   3: 113631,560 us/op
+# Warmup Iteration   4: 113624,420 us/op
+# Warmup Iteration   5: 120447,220 us/op
+Iteration   1: 113528,920 us/op
+Iteration   2: 115003,660 us/op
+Iteration   3: 116107,480 us/op
+Iteration   4: 117690,420 us/op
+Iteration   5: 114659,000 us/op
+Iteration   6: 113274,280 us/op
+Iteration   7: 113555,100 us/op
+Iteration   8: 119592,320 us/op
+Iteration   9: 114297,020 us/op
+Iteration  10: 112912,400 us/op
+Iteration  11: 112957,340 us/op
+Iteration  12: 120465,140 us/op
+Iteration  13: 118428,840 us/op
+Iteration  14: 113772,500 us/op
+Iteration  15: 113692,160 us/op
+Iteration  16: 123511,020 us/op
+Iteration  17: 113318,740 us/op
+Iteration  18: 113147,480 us/op
+Iteration  19: 131123,550 us/op
+Iteration  20: 129458,725 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findUserDto1_UserDto11_EntityToDTO":
+  117024,805 ±(99.9%) 4699,478 us/op [Average]
+  (min, avg, max) = (112912,400, 117024,805, 131123,550), stdev = 5411,926
+  CI (99.9%): [112325,327, 121724,283] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findUserDto1_UserDto1_JPQL_Query
+
+# Run progress: 20,05% complete, ETA 03:05:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 892913,800 us/op
+# Warmup Iteration   2: 426248,050 us/op
+# Warmup Iteration   3: 365371,200 us/op
+# Warmup Iteration   4: 393558,850 us/op
+# Warmup Iteration   5: 323562,050 us/op
+
+# Warmup Iteration   1: 200362,333 us/op
+# Warmup Iteration   2: 184369,333 us/op
+# Warmup Iteration   3: 134655,400 us/op
+# Warmup Iteration   4: 140344,250 us/op
+# Warmup Iteration   5: 120084,280 us/op
+
+# Warmup Iteration   1: 118998,780 us/op
+# Warmup Iteration   2: 118384,380 us/op
+# Warmup Iteration   3: 119147,260 us/op
+# Warmup Iteration   4: 119340,520 us/op
+# Warmup Iteration   5: 118824,700 us/op
+
+# Warmup Iteration   1: 108397,560 us/op
+# Warmup Iteration   2: 111548,980 us/op
+# Warmup Iteration   3: 150188,050 us/op
+# Warmup Iteration   4: 107970,340 us/op
+# Warmup Iteration   5: 108064,760 us/op
+
+# Warmup Iteration   1: 130793,425 us/op
+# Warmup Iteration   2: 129253,300 us/op
+# Warmup Iteration   3: 125517,800 us/op
+# Warmup Iteration   4: 137906,375 us/op
+# Warmup Iteration   5: 120221,300 us/op
+
+# Warmup Iteration   1: 598466,200 us/op
+# Warmup Iteration   2: 382149,900 us/op
+# Warmup Iteration   3: 338984,100 us/op
+# Warmup Iteration   4: 321372,250 us/op
+# Warmup Iteration   5: 328340,750 us/op
+
+# Warmup Iteration   1: 134888,650 us/op
+# Warmup Iteration   2: 144673,150 us/op
+# Warmup Iteration   3: 130432,125 us/op
+# Warmup Iteration   4: 120942,940 us/op
+# Warmup Iteration   5: 114826,680 us/op
+
+# Warmup Iteration   1: 203626,733 us/op
+# Warmup Iteration   2: 124326,720 us/op
+# Warmup Iteration   3: 112905,140 us/op
+# Warmup Iteration   4: 121325,340 us/op
+# Warmup Iteration   5: 135251,325 us/op
+
+# Warmup Iteration   1: 117011,480 us/op
+# Warmup Iteration   2: 143729,050 us/op
+# Warmup Iteration   3: 143202,200 us/op
+# Warmup Iteration   4: 116100,440 us/op
+# Warmup Iteration   5: 137611,575 us/op
+
+# Warmup Iteration   1: 127866,825 us/op
+# Warmup Iteration   2: 115469,680 us/op
+# Warmup Iteration   3: 122671,200 us/op
+# Warmup Iteration   4: 137275,200 us/op
+# Warmup Iteration   5: 122657,860 us/op
+
+# Warmup Iteration   1: 136339,500 us/op
+# Warmup Iteration   2: 124393,740 us/op
+# Warmup Iteration   3: 131232,850 us/op
+# Warmup Iteration   4: 125683,400 us/op
+# Warmup Iteration   5: 119955,600 us/op
+
+# Warmup Iteration   1: 322346,450 us/op
+# Warmup Iteration   2: 344207,100 us/op
+# Warmup Iteration   3: 343044,000 us/op
+# Warmup Iteration   4: 317938,000 us/op
+# Warmup Iteration   5: 336244,500 us/op
+
+# Warmup Iteration   1: 133936,325 us/op
+# Warmup Iteration   2: 118173,240 us/op
+# Warmup Iteration   3: 120899,680 us/op
+# Warmup Iteration   4: 119077,940 us/op
+# Warmup Iteration   5: 119374,100 us/op
+
+# Warmup Iteration   1: 589662,700 us/op
+# Warmup Iteration   2: 532895,700 us/op
+# Warmup Iteration   3: 372542,150 us/op
+# Warmup Iteration   4: 326064,750 us/op
+# Warmup Iteration   5: 377104,000 us/op
+
+# Warmup Iteration   1: 118929,140 us/op
+# Warmup Iteration   2: 140939,875 us/op
+# Warmup Iteration   3: 119987,920 us/op
+# Warmup Iteration   4: 120412,320 us/op
+# Warmup Iteration   5: 123219,660 us/op
+
+# Warmup Iteration   1: 138398,575 us/op
+# Warmup Iteration   2: 122397,680 us/op
+# Warmup Iteration   3: 117755,020 us/op
+# Warmup Iteration   4: 121642,840 us/op
+# Warmup Iteration   5: 121961,560 us/op
+
+# Warmup Iteration   1: 548648,100 us/op
+# Warmup Iteration   2: 425671,650 us/op
+# Warmup Iteration   3: 425527,650 us/op
+# Warmup Iteration   4: 436957,300 us/op
+# Warmup Iteration   5: 432106,350 us/op
+
+# Warmup Iteration   1: 120514,520 us/op
+# Warmup Iteration   2: 114217,140 us/op
+# Warmup Iteration   3: 113345,180 us/op
+# Warmup Iteration   4: 114214,600 us/op
+# Warmup Iteration   5: 114088,740 us/op
+Iteration   1: 114101,360 us/op
+Iteration   2: 120561,600 us/op
+Iteration   3: 112869,280 us/op
+Iteration   4: 113854,860 us/op
+Iteration   5: 113869,000 us/op
+Iteration   6: 112073,260 us/op
+Iteration   7: 113706,980 us/op
+Iteration   8: 114075,100 us/op
+Iteration   9: 112636,340 us/op
+Iteration  10: 112950,820 us/op
+Iteration  11: 113987,460 us/op
+Iteration  12: 113355,340 us/op
+Iteration  13: 113648,560 us/op
+Iteration  14: 122930,820 us/op
+Iteration  15: 114786,900 us/op
+Iteration  16: 120530,180 us/op
+Iteration  17: 115320,880 us/op
+Iteration  18: 113561,580 us/op
+Iteration  19: 136178,125 us/op
+Iteration  20: 113265,680 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findUserDto1_UserDto1_JPQL_Query":
+  115913,206 ±(99.9%) 4862,815 us/op [Average]
+  (min, avg, max) = (112073,260, 115913,206, 136178,125), stdev = 5600,025
+  CI (99.9%): [111050,391, 120776,021] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupReturnEntity.findUserProjection_UserProjection_JPQL
+
+# Run progress: 21,39% complete, ETA 03:02:35
+# Fork: 1 of 1
+# Warmup Iteration   1: 890534,200 us/op
+# Warmup Iteration   2: 532112,000 us/op
+# Warmup Iteration   3: 341480,650 us/op
+# Warmup Iteration   4: 343104,100 us/op
+# Warmup Iteration   5: 314286,550 us/op
+
+# Warmup Iteration   1: 198491,400 us/op
+# Warmup Iteration   2: 122352,540 us/op
+# Warmup Iteration   3: 112037,180 us/op
+# Warmup Iteration   4: 110193,720 us/op
+# Warmup Iteration   5: 132320,500 us/op
+
+# Warmup Iteration   1: 134803,425 us/op
+# Warmup Iteration   2: 107425,140 us/op
+# Warmup Iteration   3: 135828,000 us/op
+# Warmup Iteration   4: 114915,420 us/op
+# Warmup Iteration   5: 135253,575 us/op
+
+# Warmup Iteration   1: 107953,180 us/op
+# Warmup Iteration   2: 107027,160 us/op
+# Warmup Iteration   3: 110450,100 us/op
+# Warmup Iteration   4: 185635,467 us/op
+# Warmup Iteration   5: 110950,380 us/op
+
+# Warmup Iteration   1: 130390,225 us/op
+# Warmup Iteration   2: 120295,140 us/op
+# Warmup Iteration   3: 117093,980 us/op
+# Warmup Iteration   4: 116716,860 us/op
+# Warmup Iteration   5: 131533,000 us/op
+
+# Warmup Iteration   1: 705428,800 us/op
+# Warmup Iteration   2: 406371,150 us/op
+# Warmup Iteration   3: 345599,150 us/op
+# Warmup Iteration   4: 383295,050 us/op
+# Warmup Iteration   5: 335613,000 us/op
+
+# Warmup Iteration   1: 133643,125 us/op
+# Warmup Iteration   2: 121417,440 us/op
+# Warmup Iteration   3: 131479,425 us/op
+# Warmup Iteration   4: 120158,260 us/op
+# Warmup Iteration   5: 173697,867 us/op
+
+# Warmup Iteration   1: 189168,833 us/op
+# Warmup Iteration   2: 141008,225 us/op
+# Warmup Iteration   3: 120212,820 us/op
+# Warmup Iteration   4: 132315,350 us/op
+# Warmup Iteration   5: 117779,700 us/op
+
+# Warmup Iteration   1: 115784,100 us/op
+# Warmup Iteration   2: 120451,720 us/op
+# Warmup Iteration   3: 152673,400 us/op
+# Warmup Iteration   4: 116892,100 us/op
+# Warmup Iteration   5: 151044,975 us/op
+
+# Warmup Iteration   1: 125807,700 us/op
+# Warmup Iteration   2: 122204,820 us/op
+# Warmup Iteration   3: 133431,650 us/op
+# Warmup Iteration   4: 128094,250 us/op
+# Warmup Iteration   5: 113908,640 us/op
+
+# Warmup Iteration   1: 121555,560 us/op
+# Warmup Iteration   2: 122060,460 us/op
+# Warmup Iteration   3: 120577,760 us/op
+# Warmup Iteration   4: 121397,240 us/op
+# Warmup Iteration   5: 127573,275 us/op
+
+# Warmup Iteration   1: 325948,700 us/op
+# Warmup Iteration   2: 333356,650 us/op
+# Warmup Iteration   3: 322092,950 us/op
+# Warmup Iteration   4: 317844,750 us/op
+# Warmup Iteration   5: 326063,550 us/op
+
+# Warmup Iteration   1: 141002,250 us/op
+# Warmup Iteration   2: 118378,040 us/op
+# Warmup Iteration   3: 125971,100 us/op
+# Warmup Iteration   4: 134973,650 us/op
+# Warmup Iteration   5: 116824,080 us/op
+
+# Warmup Iteration   1: 400725,800 us/op
+# Warmup Iteration   2: 370656,200 us/op
+# Warmup Iteration   3: 323062,200 us/op
+# Warmup Iteration   4: 316674,800 us/op
+# Warmup Iteration   5: 360951,600 us/op
+
+# Warmup Iteration   1: 119519,780 us/op
+# Warmup Iteration   2: 116508,880 us/op
+# Warmup Iteration   3: 126163,000 us/op
+# Warmup Iteration   4: 119154,020 us/op
+# Warmup Iteration   5: 130861,700 us/op
+
+# Warmup Iteration   1: 124375,180 us/op
+# Warmup Iteration   2: 129663,400 us/op
+# Warmup Iteration   3: 118585,320 us/op
+# Warmup Iteration   4: 128296,400 us/op
+# Warmup Iteration   5: 119301,400 us/op
+
+# Warmup Iteration   1: 517866,600 us/op
+# Warmup Iteration   2: 430135,350 us/op
+# Warmup Iteration   3: 443909,000 us/op
+# Warmup Iteration   4: 448978,750 us/op
+# Warmup Iteration   5: 460448,900 us/op
+
+# Warmup Iteration   1: 419309,100 us/op
+# Warmup Iteration   2: 412402,050 us/op
+# Warmup Iteration   3: 424767,000 us/op
+# Warmup Iteration   4: 410457,850 us/op
+# Warmup Iteration   5: 409485,000 us/op
+Iteration   1: 413514,500 us/op
+Iteration   2: 410167,850 us/op
+Iteration   3: 410122,500 us/op
+Iteration   4: 410488,100 us/op
+Iteration   5: 421124,550 us/op
+Iteration   6: 411649,350 us/op
+Iteration   7: 413350,650 us/op
+Iteration   8: 468535,750 us/op
+Iteration   9: 425061,350 us/op
+Iteration  10: 414173,050 us/op
+Iteration  11: 414252,500 us/op
+Iteration  12: 425010,250 us/op
+Iteration  13: 411817,550 us/op
+Iteration  14: 414160,850 us/op
+Iteration  15: 412664,450 us/op
+Iteration  16: 409980,650 us/op
+Iteration  17: 413135,050 us/op
+Iteration  18: 413504,100 us/op
+Iteration  19: 413764,850 us/op
+Iteration  20: 409887,900 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findUserProjection_UserProjection_JPQL":
+  416818,290 ±(99.9%) 11266,894 us/op [Average]
+  (min, avg, max) = (409887,900, 416818,290, 468535,750), stdev = 12974,972
+  CI (99.9%): [405551,396, 428085,184] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:52:52
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                                     Mode  Cnt       Score       Error  Units
+BechhmarkGroupDynamicDtoVSProjection.findBy_UserDto4_dynamic  				  avgt   20   49248,749 ±  5348,922  us/op
+BechhmarkGroupDynamicDtoVSProjection.findBy_UserProjection2_dynamic           avgt   20  138542,241 ±   663,943  us/op
+BechhmarkGroupReturnDynamic.findAllObjectArray2_UserDto2_objectToUserDto2     avgt   20  105817,601 ±  2241,545  us/op
+BechhmarkGroupReturnDynamic.findBy_UserDto2_Dynamic                           avgt   20  104898,198 ±  1640,774  us/op
+BechhmarkGroupReturnDynamic.findUserDto2_UserDto2_JPQL                        avgt   20  101993,870 ±   391,583  us/op
+BechhmarkGroupReturnEntity.findAllEM_UserDto1_EntityManagerResultTransformer  avgt   20  111278,608 ±  1203,734  us/op
+BechhmarkGroupReturnEntity.findAllEntityToDto_UserDto1_JPA                    avgt   20  315263,240 ±  6278,788  us/op
+BechhmarkGroupReturnEntity.findAllNativeQuery2_UserDto1_Dynamic               avgt   20  118137,407 ±  5186,489  us/op
+BechhmarkGroupReturnEntity.findAllNativeQuery_ObjectArray                     avgt   20  111116,216 ±   885,390  us/op
+BechhmarkGroupReturnEntity.findAllObjectArray                                 avgt   20  115318,773 ±  4392,695  us/op
+BechhmarkGroupReturnEntity.findAllStream_User                                 avgt   20  115060,895 ±  7124,611  us/op
+BechhmarkGroupReturnEntity.findAllTuple_UserDto1                              avgt   20  122732,748 ± 11307,772  us/op
+BechhmarkGroupReturnEntity.findAll_User_JPA                                   avgt   20  313996,003 ± 14203,533  us/op
+BechhmarkGroupReturnEntity.findBy_UserDto1_dynamic                            avgt   20  114260,209 ±   826,879  us/op
+BechhmarkGroupReturnEntity.findBy_UserProjection_Dynamic                      avgt   20  309541,715 ±  5320,403  us/op
+BechhmarkGroupReturnEntity.findUserDto1_UserDto11_EntityToDTO                 avgt   20  117024,805 ±  4699,478  us/op
+BechhmarkGroupReturnEntity.findUserDto1_UserDto1_JPQL_Query                   avgt   20  115913,206 ±  4862,815  us/op
+BechhmarkGroupReturnEntity.findUserProjection_UserProjection_JPQL             avgt   20  416818,290 ± 11266,894  us/op
+
+Benchmark result is saved to jmh-result-hot.json

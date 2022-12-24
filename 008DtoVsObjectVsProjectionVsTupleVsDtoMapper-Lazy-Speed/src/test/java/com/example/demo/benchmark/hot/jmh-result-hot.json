@@ -1,0 +1,1264 @@
+[
+	    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupDynamicDtoVSProjection.findBy_UserDto4_dynamic",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 46320.55047727273,
+            "scoreError" : 2643.5994331293405,
+            "scoreConfidence" : [
+                43676.95104414339,
+                48964.14991040207
+            ],
+            "scorePercentiles" : {
+                "0.0" : 44001.75833333333,
+                "50.0" : 44866.85416666667,
+                "90.0" : 52960.06363636363,
+                "95.0" : 55108.01304545454,
+                "99.0" : 55197.43,
+                "99.9" : 55197.43,
+                "99.99" : 55197.43,
+                "99.999" : 55197.43,
+                "99.9999" : 55197.43,
+                "100.0" : 55197.43
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    45689.525,
+                    44718.75833333333,
+                    44462.575,
+                    45312.175,
+                    47478.09166666667,
+                    53409.09090909091,
+                    44927.78333333333,
+                    46084.191666666666,
+                    55197.43,
+                    44651.21666666667,
+                    44797.0,
+                    45828.325,
+                    44805.925,
+                    44511.60833333333,
+                    48112.34545454545,
+                    44652.316666666666,
+                    44606.225,
+                    44245.85,
+                    48918.818181818184,
+                    44001.75833333333
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupDynamicDtoVSProjection.findBy_UserProjection2_dynamic",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 138542.24125,
+            "scoreError" : 663.9431785286383,
+            "scoreConfidence" : [
+                137878.29807147136,
+                139206.18442852862
+            ],
+            "scorePercentiles" : {
+                "0.0" : 137393.3,
+                "50.0" : 138279.22499999998,
+                "90.0" : 139615.6125,
+                "95.0" : 139855.22875,
+                "99.0" : 139867.1,
+                "99.9" : 139867.1,
+                "99.99" : 139867.1,
+                "99.999" : 139867.1,
+                "99.9999" : 139867.1,
+                "100.0" : 139867.1
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    139629.675,
+                    139319.525,
+                    137644.0,
+                    138352.175,
+                    138099.15,
+                    138206.275,
+                    138035.6,
+                    138069.95,
+                    138695.85,
+                    139867.1,
+                    139489.05,
+                    139162.125,
+                    138836.525,
+                    137958.575,
+                    137480.8,
+                    139135.325,
+                    139446.275,
+                    137903.05,
+                    138120.5,
+                    137393.3
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnDynamic.findAllObjectArray2_UserDto2_objectToUserDto2",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 105817.601,
+            "scoreError" : 2241.544951818296,
+            "scoreConfidence" : [
+                103576.0560481817,
+                108059.1459518183
+            ],
+            "scorePercentiles" : {
+                "0.0" : 103783.28,
+                "50.0" : 104625.5,
+                "90.0" : 109612.072,
+                "95.0" : 113926.13999999998,
+                "99.0" : 114150.04,
+                "99.9" : 114150.04,
+                "99.99" : 114150.04,
+                "99.999" : 114150.04,
+                "99.9999" : 114150.04,
+                "100.0" : 114150.04
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    108240.6,
+                    104237.68,
+                    104853.06,
+                    114150.04,
+                    104085.48,
+                    105680.84,
+                    104465.02,
+                    109072.36,
+                    104597.4,
+                    104584.74,
+                    104653.6,
+                    105024.18,
+                    106161.22,
+                    104466.36,
+                    103783.28,
+                    104290.82,
+                    104229.32,
+                    104562.9,
+                    109672.04,
+                    105541.08
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnDynamic.findBy_UserDto2_Dynamic",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 104898.19799999997,
+            "scoreError" : 1640.773619280884,
+            "scoreConfidence" : [
+                103257.4243807191,
+                106538.97161928086
+            ],
+            "scorePercentiles" : {
+                "0.0" : 103408.6,
+                "50.0" : 104193.68,
+                "90.0" : 109257.302,
+                "95.0" : 109523.727,
+                "99.0" : 109530.5,
+                "99.9" : 109530.5,
+                "99.99" : 109530.5,
+                "99.999" : 109530.5,
+                "99.9999" : 109530.5,
+                "100.0" : 109530.5
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    104027.92,
+                    104343.04,
+                    103919.52,
+                    103750.66,
+                    103571.2,
+                    104809.76,
+                    104457.42,
+                    103855.98,
+                    103425.98,
+                    104475.74,
+                    104079.22,
+                    108017.66,
+                    104013.16,
+                    103408.6,
+                    103781.22,
+                    109530.5,
+                    104415.92,
+                    104308.14,
+                    106377.28,
+                    109395.04
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnDynamic.findUserDto2_UserDto2_JPQL",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 101993.87,
+            "scoreError" : 391.58284304548624,
+            "scoreConfidence" : [
+                101602.28715695451,
+                102385.45284304548
+            ],
+            "scorePercentiles" : {
+                "0.0" : 101259.55,
+                "50.0" : 101917.20333333334,
+                "90.0" : 102741.226,
+                "95.0" : 103202.77766666666,
+                "99.0" : 103224.68,
+                "99.9" : 103224.68,
+                "99.99" : 103224.68,
+                "99.999" : 103224.68,
+                "99.9999" : 103224.68,
+                "100.0" : 103224.68
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    101259.55,
+                    102228.24,
+                    101750.61666666667,
+                    101843.86666666667,
+                    102786.63333333333,
+                    102322.86,
+                    103224.68,
+                    102043.92,
+                    101734.41666666667,
+                    102053.64,
+                    101546.36,
+                    102332.56,
+                    101933.66666666667,
+                    101803.28,
+                    101763.88,
+                    102109.34,
+                    101900.74,
+                    101394.31666666667,
+                    102100.45,
+                    101744.38333333333
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllEM_UserDto1_EntityManagerResultTransformer",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 111278.60800000001,
+            "scoreError" : 1203.7341398945405,
+            "scoreConfidence" : [
+                110074.87386010546,
+                112482.34213989455
+            ],
+            "scorePercentiles" : {
+                "0.0" : 110016.7,
+                "50.0" : 111021.57999999999,
+                "90.0" : 112234.124,
+                "95.0" : 116281.453,
+                "99.0" : 116493.64,
+                "99.9" : 116493.64,
+                "99.99" : 116493.64,
+                "99.999" : 116493.64,
+                "99.9999" : 116493.64,
+                "100.0" : 116493.64
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    110205.14,
+                    111423.58,
+                    110330.3,
+                    111454.24,
+                    112092.14,
+                    110016.7,
+                    110515.44,
+                    111034.9,
+                    111971.64,
+                    110713.58,
+                    110141.78,
+                    111237.72,
+                    110696.32,
+                    110465.46,
+                    110897.5,
+                    112249.9,
+                    111480.3,
+                    111143.62,
+                    111008.26,
+                    116493.64
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllEntityToDto_UserDto1_JPA",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 315263.23999999993,
+            "scoreError" : 6278.787928160393,
+            "scoreConfidence" : [
+                308984.45207183954,
+                321542.0279281603
+            ],
+            "scorePercentiles" : {
+                "0.0" : 310017.95,
+                "50.0" : 312795.94999999995,
+                "90.0" : 321531.70499999996,
+                "95.0" : 342362.88749999995,
+                "99.0" : 343438.05,
+                "99.9" : 343438.05,
+                "99.99" : 343438.05,
+                "99.999" : 343438.05,
+                "99.9999" : 343438.05,
+                "100.0" : 343438.05
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    312180.7,
+                    317903.85,
+                    310829.6,
+                    314780.5,
+                    310017.95,
+                    314039.55,
+                    312817.55,
+                    310935.3,
+                    314531.55,
+                    312774.35,
+                    316935.9,
+                    312768.45,
+                    321934.8,
+                    311457.25,
+                    315525.45,
+                    316451.2,
+                    343438.05,
+                    312047.25,
+                    311275.2,
+                    312620.35
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllNativeQuery2_UserDto1_Dynamic",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 118137.40725,
+            "scoreError" : 5186.489127661154,
+            "scoreConfidence" : [
+                112950.91812233884,
+                123323.89637766116
+            ],
+            "scorePercentiles" : {
+                "0.0" : 113567.38,
+                "50.0" : 115556.97,
+                "90.0" : 128025.73499999999,
+                "95.0" : 136195.29875,
+                "99.0" : 136596.175,
+                "99.9" : 136596.175,
+                "99.99" : 136596.175,
+                "99.999" : 136596.175,
+                "99.9999" : 136596.175,
+                "100.0" : 136596.175
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    116102.66,
+                    116142.44,
+                    113567.38,
+                    128578.65,
+                    114276.94,
+                    116778.66,
+                    113866.24,
+                    123049.5,
+                    136596.175,
+                    115019.7,
+                    115477.28,
+                    122216.04,
+                    113870.2,
+                    113858.46,
+                    114366.02,
+                    122202.82,
+                    115402.52,
+                    114309.28,
+                    115636.66,
+                    121430.52
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllNativeQuery_ObjectArray",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 111116.21600000001,
+            "scoreError" : 885.3900801780094,
+            "scoreConfidence" : [
+                110230.825919822,
+                112001.60608017803
+            ],
+            "scorePercentiles" : {
+                "0.0" : 109883.14,
+                "50.0" : 110785.03,
+                "90.0" : 112595.32,
+                "95.0" : 113868.337,
+                "99.0" : 113933.14,
+                "99.9" : 113933.14,
+                "99.99" : 113933.14,
+                "99.999" : 113933.14,
+                "99.9999" : 113933.14,
+                "100.0" : 113933.14
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    111444.04,
+                    110510.32,
+                    110508.96,
+                    110884.2,
+                    111525.78,
+                    109883.14,
+                    110191.04,
+                    110108.64,
+                    111757.92,
+                    110833.0,
+                    113933.14,
+                    111331.22,
+                    112219.48,
+                    110737.06,
+                    110687.82,
+                    112138.44,
+                    112637.08,
+                    110377.6,
+                    110123.9,
+                    110491.54
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllObjectArray",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 115318.77325000001,
+            "scoreError" : 4392.694751646538,
+            "scoreConfidence" : [
+                110926.07849835347,
+                119711.46800164656
+            ],
+            "scorePercentiles" : {
+                "0.0" : 110840.96,
+                "50.0" : 112422.70999999999,
+                "90.0" : 123217.606,
+                "95.0" : 128838.78275,
+                "99.0" : 129127.425,
+                "99.9" : 129127.425,
+                "99.99" : 129127.425,
+                "99.999" : 129127.425,
+                "99.9999" : 129127.425,
+                "100.0" : 129127.425
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    112459.12,
+                    129127.425,
+                    119426.02,
+                    111860.44,
+                    119341.92,
+                    112386.3,
+                    115821.44,
+                    112186.14,
+                    111984.86,
+                    112003.02,
+                    123354.58,
+                    112115.08,
+                    110913.58,
+                    117530.12,
+                    121984.84,
+                    111269.48,
+                    112075.9,
+                    112547.06,
+                    117147.18,
+                    110840.96
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllStream_User",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 115060.89499999999,
+            "scoreError" : 7124.61110049981,
+            "scoreConfidence" : [
+                107936.28389950018,
+                122185.5061004998
+            ],
+            "scorePercentiles" : {
+                "0.0" : 110031.74,
+                "50.0" : 111492.42,
+                "90.0" : 121437.70199999999,
+                "95.0" : 144822.965,
+                "99.0" : 146041.1,
+                "99.9" : 146041.1,
+                "99.99" : 146041.1,
+                "99.999" : 146041.1,
+                "99.9999" : 146041.1,
+                "100.0" : 146041.1
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    110312.86,
+                    119271.42,
+                    110372.24,
+                    110031.74,
+                    111787.34,
+                    116295.94,
+                    110158.78,
+                    111197.5,
+                    113531.28,
+                    117446.18,
+                    110385.8,
+                    110885.26,
+                    112530.66,
+                    121678.4,
+                    110659.24,
+                    110358.06,
+                    111058.06,
+                    119005.64,
+                    146041.1,
+                    118210.4
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAllTuple_UserDto1",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 122732.74824999999,
+            "scoreError" : 11307.771650577102,
+            "scoreConfidence" : [
+                111424.9765994229,
+                134040.51990057708
+            ],
+            "scorePercentiles" : {
+                "0.0" : 114988.54,
+                "50.0" : 117723.75,
+                "90.0" : 141772.47999999998,
+                "95.0" : 167621.24,
+                "99.0" : 168931.5,
+                "99.9" : 168931.5,
+                "99.99" : 168931.5,
+                "99.999" : 168931.5,
+                "99.9999" : 168931.5,
+                "100.0" : 168931.5
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    117595.28,
+                    116104.3,
+                    116389.26,
+                    115111.4,
+                    133188.1,
+                    168931.5,
+                    120662.32,
+                    117925.82,
+                    123488.84,
+                    116582.1,
+                    114988.54,
+                    115371.22,
+                    118930.18,
+                    117852.22,
+                    142726.3,
+                    119538.14,
+                    130312.625,
+                    116127.0,
+                    116914.4,
+                    115915.42
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findAll_User_JPA",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 313996.00250000006,
+            "scoreError" : 14203.532908819732,
+            "scoreConfidence" : [
+                299792.4695911803,
+                328199.5354088198
+            ],
+            "scorePercentiles" : {
+                "0.0" : 307379.75,
+                "50.0" : 309189.775,
+                "90.0" : 320936.265,
+                "95.0" : 378830.89249999996,
+                "99.0" : 381861.3,
+                "99.9" : 381861.3,
+                "99.99" : 381861.3,
+                "99.999" : 381861.3,
+                "99.9999" : 381861.3,
+                "100.0" : 381861.3
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    313008.5,
+                    308962.05,
+                    308574.5,
+                    309283.85,
+                    321253.15,
+                    381861.3,
+                    310062.8,
+                    308467.45,
+                    309045.0,
+                    312627.7,
+                    307943.95,
+                    307867.4,
+                    309119.7,
+                    308923.15,
+                    307379.75,
+                    310568.0,
+                    307677.75,
+                    309949.9,
+                    309259.85,
+                    318084.3
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findBy_UserDto1_dynamic",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 114260.209,
+            "scoreError" : 826.8789111375357,
+            "scoreConfidence" : [
+                113433.33008886247,
+                115087.08791113754
+            ],
+            "scorePercentiles" : {
+                "0.0" : 112906.88,
+                "50.0" : 114113.69,
+                "90.0" : 115605.36,
+                "95.0" : 116592.106,
+                "99.0" : 116641.44,
+                "99.9" : 116641.44,
+                "99.99" : 116641.44,
+                "99.999" : 116641.44,
+                "99.9999" : 116641.44,
+                "100.0" : 116641.44
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    114518.02,
+                    114130.18,
+                    114535.44,
+                    114711.46,
+                    116641.44,
+                    114070.06,
+                    114832.5,
+                    115654.76,
+                    113038.66,
+                    113046.34,
+                    114997.52,
+                    113015.62,
+                    114725.8,
+                    113717.52,
+                    115160.76,
+                    113785.76,
+                    113719.32,
+                    113898.94,
+                    114097.2,
+                    112906.88
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findBy_UserProjection_Dynamic",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 309541.715,
+            "scoreError" : 5320.402980718903,
+            "scoreConfidence" : [
+                304221.31201928115,
+                314862.1179807189
+            ],
+            "scorePercentiles" : {
+                "0.0" : 305321.0,
+                "50.0" : 307299.725,
+                "90.0" : 319220.995,
+                "95.0" : 328612.625,
+                "99.0" : 329094.5,
+                "99.9" : 329094.5,
+                "99.99" : 329094.5,
+                "99.999" : 329094.5,
+                "99.9999" : 329094.5,
+                "100.0" : 329094.5
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    307751.65,
+                    329094.5,
+                    306668.7,
+                    307498.85,
+                    305691.1,
+                    305321.0,
+                    307481.85,
+                    309453.65,
+                    317096.95,
+                    305767.0,
+                    306463.3,
+                    308133.1,
+                    315874.15,
+                    306412.75,
+                    305721.9,
+                    306027.55,
+                    319457.0,
+                    307133.45,
+                    306319.85,
+                    307466.0
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findUserDto1_UserDto11_EntityToDTO",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 117024.80474999998,
+            "scoreError" : 4699.478225669934,
+            "scoreConfidence" : [
+                112325.32652433004,
+                121724.28297566992
+            ],
+            "scorePercentiles" : {
+                "0.0" : 112912.4,
+                "50.0" : 114478.01000000001,
+                "90.0" : 128863.95449999999,
+                "95.0" : 131040.30874999998,
+                "99.0" : 131123.55,
+                "99.9" : 131123.55,
+                "99.99" : 131123.55,
+                "99.999" : 131123.55,
+                "99.9999" : 131123.55,
+                "100.0" : 131123.55
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    113528.92,
+                    115003.66,
+                    116107.48,
+                    117690.42,
+                    114659.0,
+                    113274.28,
+                    113555.1,
+                    119592.32,
+                    114297.02,
+                    112912.4,
+                    112957.34,
+                    120465.14,
+                    118428.84,
+                    113772.5,
+                    113692.16,
+                    123511.02,
+                    113318.74,
+                    113147.48,
+                    131123.55,
+                    129458.725
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findUserDto1_UserDto1_JPQL_Query",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 115913.20625,
+            "scoreError" : 4862.814878868253,
+            "scoreConfidence" : [
+                111050.39137113174,
+                120776.02112886826
+            ],
+            "scorePercentiles" : {
+                "0.0" : 112073.26,
+                "50.0" : 113861.93,
+                "90.0" : 122693.898,
+                "95.0" : 135515.75975,
+                "99.0" : 136178.125,
+                "99.9" : 136178.125,
+                "99.99" : 136178.125,
+                "99.999" : 136178.125,
+                "99.9999" : 136178.125,
+                "100.0" : 136178.125
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    114101.36,
+                    120561.6,
+                    112869.28,
+                    113854.86,
+                    113869.0,
+                    112073.26,
+                    113706.98,
+                    114075.1,
+                    112636.34,
+                    112950.82,
+                    113987.46,
+                    113355.34,
+                    113648.56,
+                    122930.82,
+                    114786.9,
+                    120530.18,
+                    115320.88,
+                    113561.58,
+                    136178.125,
+                    113265.68
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.36",
+        "benchmark" : "com.example.demo.benchmark.BechhmarkGroupReturnEntity.findUserProjection_UserProjection_JPQL",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "D:\\Programlama Setup\\sts-4.10.0.RELEASE\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\\jre\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-XX:+ShowCodeDetailsInExceptionMessages",
+            "-Xms5120M",
+            "-Xmx10240M"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7-27",
+        "warmupIterations" : 5,
+        "warmupTime" : "500 ms",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 20,
+        "measurementTime" : "500 ms",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 416818.29,
+            "scoreError" : 11266.894206379771,
+            "scoreConfidence" : [
+                405551.3957936202,
+                428085.18420637975
+            ],
+            "scorePercentiles" : {
+                "0.0" : 409887.9,
+                "50.0" : 413427.375,
+                "90.0" : 425056.24,
+                "95.0" : 466362.02999999997,
+                "99.0" : 468535.75,
+                "99.9" : 468535.75,
+                "99.99" : 468535.75,
+                "99.999" : 468535.75,
+                "99.9999" : 468535.75,
+                "100.0" : 468535.75
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    413514.5,
+                    410167.85,
+                    410122.5,
+                    410488.1,
+                    421124.55,
+                    411649.35,
+                    413350.65,
+                    468535.75,
+                    425061.35,
+                    414173.05,
+                    414252.5,
+                    425010.25,
+                    411817.55,
+                    414160.85,
+                    412664.45,
+                    409980.65,
+                    413135.05,
+                    413504.1,
+                    413764.85,
+                    409887.9
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

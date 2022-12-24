@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "hibernate.query.plan_cache_max_size",
+    "type": "java.lang.Integer",
+    "description": "A description for 'hibernate.query.plan_cache_max_size'"
+  },
+  {
+    "name": "hibernate.query.plan_parameter_metadata_max_size",
+    "type": "java.lang.Integer",
+    "description": "A description for 'hibernate.query.plan_parameter_metadata_max_size'"
+  },
+  {
+    "name": "app.insert.size",
+    "type": "java.lang.Integer",
+    "description": "A description for 'app.insert.size'"
+  },
+  {
+    "name": "app.insert",
+    "type": "java.lang.Booleean",
+    "description": "A description for 'app.insert'"
+  }
+]}

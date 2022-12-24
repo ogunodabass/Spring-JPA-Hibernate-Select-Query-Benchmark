@@ -1,0 +1,133 @@
+# JMH version: 1.36
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7-27
+# VM invoker: D:\Programlama Setup\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages -Xms5120M -Xmx10240M
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 500 ms each
+# Measurement: 20 iterations, 500 ms each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.demo.benchmark.BechhmarkGroupDynamicDtoVSProjection.findBy_UserDto4_dynamic
+
+# Run progress: 0,00% complete, ETA 00:00:45
+# Fork: 1 of 3
+# Warmup Iteration   1: 143344,975 us/op
+# Warmup Iteration   2: 92904,217 us/op
+# Warmup Iteration   3: 60270,600 us/op
+# Warmup Iteration   4: 75529,343 us/op
+# Warmup Iteration   5: 63873,533 us/op
+
+# Warmup Iteration   1: 61879,111 us/op
+# Warmup Iteration   2: 50690,891 us/op
+# Warmup Iteration   3: 45108,933 us/op
+# Warmup Iteration   4: 45369,175 us/op
+# Warmup Iteration   5: 45401,742 us/op
+Iteration   1: 45983,933 us/op
+Iteration   2: 45227,592 us/op
+Iteration   3: 49288,845 us/op
+Iteration   4: 45018,983 us/op
+Iteration   5: 45056,900 us/op
+Iteration   6: 46410,582 us/op
+Iteration   7: 48126,936 us/op
+Iteration   8: 44687,617 us/op
+Iteration   9: 45052,983 us/op
+Iteration  10: 45217,267 us/op
+Iteration  11: 46441,145 us/op
+Iteration  12: 45056,425 us/op
+Iteration  13: 48710,236 us/op
+Iteration  14: 44733,250 us/op
+Iteration  15: 45340,442 us/op
+Iteration  16: 44785,250 us/op
+Iteration  17: 44957,708 us/op
+Iteration  18: 45955,800 us/op
+Iteration  19: 44472,575 us/op
+Iteration  20: 44931,667 us/op
+
+# Run progress: 27,78% complete, ETA 00:02:03
+# Fork: 2 of 3
+# Warmup Iteration   1: 223381,367 us/op
+# Warmup Iteration   2: 114499,300 us/op
+# Warmup Iteration   3: 62143,089 us/op
+# Warmup Iteration   4: 83828,514 us/op
+# Warmup Iteration   5: 57333,844 us/op
+
+# Warmup Iteration   1: 71127,088 us/op
+# Warmup Iteration   2: 45447,508 us/op
+# Warmup Iteration   3: 46147,025 us/op
+# Warmup Iteration   4: 47741,067 us/op
+# Warmup Iteration   5: 46082,525 us/op
+Iteration   1: 46767,609 us/op
+Iteration   2: 48426,527 us/op
+Iteration   3: 46391,691 us/op
+Iteration   4: 45678,100 us/op
+Iteration   5: 48400,455 us/op
+Iteration   6: 49087,791 us/op
+Iteration   7: 46381,636 us/op
+Iteration   8: 45997,817 us/op
+Iteration   9: 45702,375 us/op
+Iteration  10: 47137,925 us/op
+Iteration  11: 45965,417 us/op
+Iteration  12: 46517,145 us/op
+Iteration  13: 45960,925 us/op
+Iteration  14: 45490,458 us/op
+Iteration  15: 47761,991 us/op
+Iteration  16: 45618,100 us/op
+Iteration  17: 45353,558 us/op
+Iteration  18: 45682,683 us/op
+Iteration  19: 45109,742 us/op
+Iteration  20: 45406,592 us/op
+
+# Run progress: 55,56% complete, ETA 00:01:16
+# Fork: 3 of 3
+# Warmup Iteration   1: 184633,667 us/op
+# Warmup Iteration   2: 106357,860 us/op
+# Warmup Iteration   3: 93340,650 us/op
+# Warmup Iteration   4: 82864,886 us/op
+# Warmup Iteration   5: 57676,200 us/op
+
+# Warmup Iteration   1: 59901,089 us/op
+# Warmup Iteration   2: 45020,242 us/op
+# Warmup Iteration   3: 44867,392 us/op
+# Warmup Iteration   4: 45393,550 us/op
+# Warmup Iteration   5: 47856,136 us/op
+Iteration   1: 46948,782 us/op
+Iteration   2: 45256,458 us/op
+Iteration   3: 45123,267 us/op
+Iteration   4: 46156,700 us/op
+Iteration   5: 50171,600 us/op
+Iteration   6: 44753,217 us/op
+Iteration   7: 45528,508 us/op
+Iteration   8: 44996,242 us/op
+Iteration   9: 48672,764 us/op
+Iteration  10: 45254,925 us/op
+Iteration  11: 45323,425 us/op
+Iteration  12: 45841,817 us/op
+Iteration  13: 46732,382 us/op
+Iteration  14: 44689,525 us/op
+Iteration  15: 46072,745 us/op
+Iteration  16: 44544,867 us/op
+Iteration  17: 44468,292 us/op
+Iteration  18: 44928,917 us/op
+Iteration  19: 44827,233 us/op
+Iteration  20: 44727,567 us/op
+
+
+Result "com.example.demo.benchmark.BechhmarkGroupDynamicDtoVSProjection.findBy_UserDto4_dynamic":
+  45988,565 ±(99.9%) 605,390 us/op [Average]
+  (min, avg, max) = (44468,292, 45988,565, 50171,600), stdev = 1354,041
+  CI (99.9%): [45383,175, 46593,955] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:22
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                     Mode  Cnt      Score     Error  Units
+BechhmarkGroupDynamicDtoVSProjection.findBy_UserDto4_dynamic  avgt   60  45988,565 ± 605,390  us/op
+
+Benchmark result is saved to jmh-result-hot.json
